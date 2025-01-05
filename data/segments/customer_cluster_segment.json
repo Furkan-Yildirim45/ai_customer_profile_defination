@@ -1,0 +1,8002 @@
+[
+    {
+        "customer_id": 1,
+        "total_order_value": 26058.53,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 2,
+        "total_order_value": 25639.16,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 39,
+        "cluster": 0
+    },
+    {
+        "customer_id": 3,
+        "total_order_value": 11020.92,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 4,
+        "total_order_value": 16498.7,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 5,
+        "total_order_value": 13870.16,
+        "basket_size": 4.8,
+        "purchase_frequency": 5,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 6,
+        "total_order_value": 4525.77,
+        "basket_size": 3.0,
+        "purchase_frequency": 3,
+        "age": 50,
+        "cluster": 2
+    },
+    {
+        "customer_id": 7,
+        "total_order_value": 15891.45,
+        "basket_size": 5.571428571428571,
+        "purchase_frequency": 7,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 8,
+        "total_order_value": 9807.62,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 9,
+        "total_order_value": 15468.73,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 10,
+        "total_order_value": 25567.12,
+        "basket_size": 6.625,
+        "purchase_frequency": 8,
+        "age": 25,
+        "cluster": 0
+    },
+    {
+        "customer_id": 11,
+        "total_order_value": 12211.61,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 12,
+        "total_order_value": 10034.94,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 13,
+        "total_order_value": 21515.67,
+        "basket_size": 6.25,
+        "purchase_frequency": 8,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 14,
+        "total_order_value": 17651.9,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 15,
+        "total_order_value": 45578.53,
+        "basket_size": 7.25,
+        "purchase_frequency": 12,
+        "age": 40,
+        "cluster": 0
+    },
+    {
+        "customer_id": 16,
+        "total_order_value": 30965.76,
+        "basket_size": 8.555555555555555,
+        "purchase_frequency": 9,
+        "age": 54,
+        "cluster": 0
+    },
+    {
+        "customer_id": 17,
+        "total_order_value": 25564.2,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 62,
+        "cluster": 2
+    },
+    {
+        "customer_id": 18,
+        "total_order_value": 21675.27,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 19,
+        "total_order_value": 12582.92,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 20,
+        "total_order_value": 31063.59,
+        "basket_size": 6.0,
+        "purchase_frequency": 9,
+        "age": 78,
+        "cluster": 0
+    },
+    {
+        "customer_id": 21,
+        "total_order_value": 21691.06,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 22,
+        "total_order_value": 30910.67,
+        "basket_size": 6.0,
+        "purchase_frequency": 8,
+        "age": 18,
+        "cluster": 0
+    },
+    {
+        "customer_id": 23,
+        "total_order_value": 14248.91,
+        "basket_size": 5.0,
+        "purchase_frequency": 5,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 24,
+        "total_order_value": 26695.1,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 60,
+        "cluster": 0
+    },
+    {
+        "customer_id": 25,
+        "total_order_value": 17251.17,
+        "basket_size": 8.0,
+        "purchase_frequency": 3,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 26,
+        "total_order_value": 28988.76,
+        "basket_size": 4.625,
+        "purchase_frequency": 8,
+        "age": 37,
+        "cluster": 0
+    },
+    {
+        "customer_id": 27,
+        "total_order_value": 30289.2,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 28,
+        "total_order_value": 16001.69,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 29,
+        "total_order_value": 20649.28,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 30,
+        "total_order_value": 28878.0,
+        "basket_size": 5.5,
+        "purchase_frequency": 8,
+        "age": 74,
+        "cluster": 0
+    },
+    {
+        "customer_id": 31,
+        "total_order_value": 36071.26,
+        "basket_size": 9.0,
+        "purchase_frequency": 8,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 32,
+        "total_order_value": 27339.35,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 37,
+        "cluster": 0
+    },
+    {
+        "customer_id": 33,
+        "total_order_value": 9859.5,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 34,
+        "total_order_value": 13546.49,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 35,
+        "total_order_value": 11651.94,
+        "basket_size": 5.0,
+        "purchase_frequency": 4,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 36,
+        "total_order_value": 12193.74,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 3,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 37,
+        "total_order_value": 40551.33,
+        "basket_size": 6.454545454545454,
+        "purchase_frequency": 11,
+        "age": 65,
+        "cluster": 0
+    },
+    {
+        "customer_id": 38,
+        "total_order_value": 5094.08,
+        "basket_size": 5.5,
+        "purchase_frequency": 2,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 39,
+        "total_order_value": 25736.53,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 32,
+        "cluster": 0
+    },
+    {
+        "customer_id": 40,
+        "total_order_value": 3502.91,
+        "basket_size": 6.5,
+        "purchase_frequency": 2,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 41,
+        "total_order_value": 27467.85,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 42,
+        "total_order_value": 26473.04,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 43,
+        "total_order_value": 17570.77,
+        "basket_size": 5.625,
+        "purchase_frequency": 8,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 44,
+        "total_order_value": 10225.81,
+        "basket_size": 4.285714285714286,
+        "purchase_frequency": 7,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 45,
+        "total_order_value": 31936.0,
+        "basket_size": 7.777777777777778,
+        "purchase_frequency": 9,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 46,
+        "total_order_value": 40273.99,
+        "basket_size": 6.4,
+        "purchase_frequency": 10,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 47,
+        "total_order_value": 12202.7,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 48,
+        "total_order_value": 5114.400000000001,
+        "basket_size": 8.0,
+        "purchase_frequency": 2,
+        "age": 4,
+        "cluster": 1
+    },
+    {
+        "customer_id": 49,
+        "total_order_value": 20225.36,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 50,
+        "total_order_value": 25325.48,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 93,
+        "cluster": 0
+    },
+    {
+        "customer_id": 51,
+        "total_order_value": 11623.22,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 52,
+        "total_order_value": 34287.92,
+        "basket_size": 6.454545454545454,
+        "purchase_frequency": 11,
+        "age": 44,
+        "cluster": 0
+    },
+    {
+        "customer_id": 53,
+        "total_order_value": 7826.019999999999,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 54,
+        "total_order_value": 11343.2,
+        "basket_size": 4.5,
+        "purchase_frequency": 4,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 55,
+        "total_order_value": 15570.6,
+        "basket_size": 6.857142857142857,
+        "purchase_frequency": 7,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 56,
+        "total_order_value": 19924.71,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 57,
+        "total_order_value": 25806.620000000003,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 58,
+        "total_order_value": 21891.28,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 59,
+        "total_order_value": 28326.98,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 24,
+        "cluster": 1
+    },
+    {
+        "customer_id": 60,
+        "total_order_value": 14649.86,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 61,
+        "total_order_value": 8110.92,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 3,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 62,
+        "total_order_value": 30821.93,
+        "basket_size": 8.0,
+        "purchase_frequency": 7,
+        "age": 95,
+        "cluster": 0
+    },
+    {
+        "customer_id": 63,
+        "total_order_value": 13507.4,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 64,
+        "total_order_value": 18589.9,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 65,
+        "total_order_value": 21609.92,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 66,
+        "total_order_value": 24912.18,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 56,
+        "cluster": 0
+    },
+    {
+        "customer_id": 67,
+        "total_order_value": 33982.53,
+        "basket_size": 7.125,
+        "purchase_frequency": 8,
+        "age": 61,
+        "cluster": 0
+    },
+    {
+        "customer_id": 68,
+        "total_order_value": 26952.27,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 69,
+        "total_order_value": 23723.55,
+        "basket_size": 7.111111111111111,
+        "purchase_frequency": 9,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 70,
+        "total_order_value": 18696.9,
+        "basket_size": 9.4,
+        "purchase_frequency": 5,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 71,
+        "total_order_value": 12305.72,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 72,
+        "total_order_value": 21854.21,
+        "basket_size": 7.0,
+        "purchase_frequency": 7,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 73,
+        "total_order_value": 21265.47,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 74,
+        "total_order_value": 4838.76,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 75,
+        "total_order_value": 26701.57,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 18,
+        "cluster": 0
+    },
+    {
+        "customer_id": 76,
+        "total_order_value": 26146.19,
+        "basket_size": 7.4,
+        "purchase_frequency": 10,
+        "age": 57,
+        "cluster": 0
+    },
+    {
+        "customer_id": 77,
+        "total_order_value": 25508.94,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 78,
+        "total_order_value": 49411.84,
+        "basket_size": 7.727272727272727,
+        "purchase_frequency": 11,
+        "age": 65,
+        "cluster": 0
+    },
+    {
+        "customer_id": 79,
+        "total_order_value": 4489.08,
+        "basket_size": 7.5,
+        "purchase_frequency": 2,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 80,
+        "total_order_value": 24745.83,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 81,
+        "total_order_value": 37381.6,
+        "basket_size": 8.428571428571429,
+        "purchase_frequency": 7,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 82,
+        "total_order_value": 22033.13,
+        "basket_size": 5.571428571428571,
+        "purchase_frequency": 7,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 83,
+        "total_order_value": 7031.64,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 84,
+        "total_order_value": 30146.14,
+        "basket_size": 5.888888888888889,
+        "purchase_frequency": 9,
+        "age": 6,
+        "cluster": 0
+    },
+    {
+        "customer_id": 85,
+        "total_order_value": 24017.36,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 13,
+        "cluster": 1
+    },
+    {
+        "customer_id": 86,
+        "total_order_value": 6751.44,
+        "basket_size": 8.0,
+        "purchase_frequency": 2,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 87,
+        "total_order_value": 15515.87,
+        "basket_size": 5.6,
+        "purchase_frequency": 5,
+        "age": 49,
+        "cluster": 2
+    },
+    {
+        "customer_id": 88,
+        "total_order_value": 34690.0,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 12,
+        "cluster": 0
+    },
+    {
+        "customer_id": 89,
+        "total_order_value": 29325.21,
+        "basket_size": 6.5,
+        "purchase_frequency": 10,
+        "age": 71,
+        "cluster": 0
+    },
+    {
+        "customer_id": 90,
+        "total_order_value": 15931.08,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 91,
+        "total_order_value": 12676.79,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 92,
+        "total_order_value": 11218.93,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 93,
+        "total_order_value": 18825.59,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 92,
+        "cluster": 2
+    },
+    {
+        "customer_id": 94,
+        "total_order_value": 10331.24,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 95,
+        "total_order_value": 8672.14,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 35,
+        "cluster": 1
+    },
+    {
+        "customer_id": 96,
+        "total_order_value": 19548.7,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 97,
+        "total_order_value": 24542.72,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 98,
+        "total_order_value": 18295.59,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 82,
+        "cluster": 0
+    },
+    {
+        "customer_id": 99,
+        "total_order_value": 28383.13,
+        "basket_size": 6.111111111111111,
+        "purchase_frequency": 9,
+        "age": 80,
+        "cluster": 0
+    },
+    {
+        "customer_id": 100,
+        "total_order_value": 10717.5,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 101,
+        "total_order_value": 12091.6,
+        "basket_size": 3.8,
+        "purchase_frequency": 5,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 102,
+        "total_order_value": 25555.42,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 103,
+        "total_order_value": 12000.24,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 104,
+        "total_order_value": 11599.83,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 105,
+        "total_order_value": 15233.080000000002,
+        "basket_size": 9.333333333333334,
+        "purchase_frequency": 3,
+        "age": 65,
+        "cluster": 2
+    },
+    {
+        "customer_id": 106,
+        "total_order_value": 8279.28,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 3,
+        "age": 79,
+        "cluster": 2
+    },
+    {
+        "customer_id": 107,
+        "total_order_value": 5663.56,
+        "basket_size": 7.0,
+        "purchase_frequency": 2,
+        "age": 31,
+        "cluster": 1
+    },
+    {
+        "customer_id": 108,
+        "total_order_value": 19804.57,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 109,
+        "total_order_value": 31191.34,
+        "basket_size": 7.571428571428571,
+        "purchase_frequency": 7,
+        "age": 54,
+        "cluster": 0
+    },
+    {
+        "customer_id": 110,
+        "total_order_value": 23508.6,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 87,
+        "cluster": 0
+    },
+    {
+        "customer_id": 111,
+        "total_order_value": 11383.56,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 112,
+        "total_order_value": 16542.78,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 113,
+        "total_order_value": 20319.85,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 114,
+        "total_order_value": 8553.54,
+        "basket_size": 7.0,
+        "purchase_frequency": 2,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 115,
+        "total_order_value": 23772.95,
+        "basket_size": 7.833333333333333,
+        "purchase_frequency": 6,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 116,
+        "total_order_value": 20959.81,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 117,
+        "total_order_value": 25954.32,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 118,
+        "total_order_value": 25507.28,
+        "basket_size": 8.428571428571429,
+        "purchase_frequency": 7,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 119,
+        "total_order_value": 12127.75,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 120,
+        "total_order_value": 17145.19,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 38,
+        "cluster": 0
+    },
+    {
+        "customer_id": 121,
+        "total_order_value": 40179.41,
+        "basket_size": 6.909090909090909,
+        "purchase_frequency": 11,
+        "age": 84,
+        "cluster": 0
+    },
+    {
+        "customer_id": 122,
+        "total_order_value": 10552.73,
+        "basket_size": 3.75,
+        "purchase_frequency": 4,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 123,
+        "total_order_value": 9854.62,
+        "basket_size": 9.0,
+        "purchase_frequency": 2,
+        "age": 92,
+        "cluster": 2
+    },
+    {
+        "customer_id": 124,
+        "total_order_value": 66785.21,
+        "basket_size": 8.0,
+        "purchase_frequency": 12,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 125,
+        "total_order_value": 31934.59,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 126,
+        "total_order_value": 37960.68,
+        "basket_size": 7.0,
+        "purchase_frequency": 9,
+        "age": 47,
+        "cluster": 0
+    },
+    {
+        "customer_id": 127,
+        "total_order_value": 21668.75,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 128,
+        "total_order_value": 7325.599999999999,
+        "basket_size": 9.0,
+        "purchase_frequency": 4,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 129,
+        "total_order_value": 9225.7,
+        "basket_size": 6.0,
+        "purchase_frequency": 3,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 130,
+        "total_order_value": 23944.74,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 40,
+        "cluster": 1
+    },
+    {
+        "customer_id": 131,
+        "total_order_value": 13490.42,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 132,
+        "total_order_value": 42799.42,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 12,
+        "age": 67,
+        "cluster": 0
+    },
+    {
+        "customer_id": 133,
+        "total_order_value": 4181.08,
+        "basket_size": 5.0,
+        "purchase_frequency": 2,
+        "age": 47,
+        "cluster": 2
+    },
+    {
+        "customer_id": 134,
+        "total_order_value": 7712.72,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 135,
+        "total_order_value": 27221.76,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 136,
+        "total_order_value": 30532.69,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 6,
+        "age": 71,
+        "cluster": 0
+    },
+    {
+        "customer_id": 137,
+        "total_order_value": 11901.73,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 138,
+        "total_order_value": 4790.52,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 3,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 139,
+        "total_order_value": 8775.619999999999,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 140,
+        "total_order_value": 33111.74,
+        "basket_size": 6.625,
+        "purchase_frequency": 8,
+        "age": 4,
+        "cluster": 0
+    },
+    {
+        "customer_id": 141,
+        "total_order_value": 25875.68,
+        "basket_size": 6.555555555555555,
+        "purchase_frequency": 9,
+        "age": 7,
+        "cluster": 0
+    },
+    {
+        "customer_id": 142,
+        "total_order_value": 22260.72,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 143,
+        "total_order_value": 11834.41,
+        "basket_size": 5.0,
+        "purchase_frequency": 5,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 144,
+        "total_order_value": 39630.98,
+        "basket_size": 7.888888888888889,
+        "purchase_frequency": 9,
+        "age": 59,
+        "cluster": 0
+    },
+    {
+        "customer_id": 145,
+        "total_order_value": 20727.55,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 146,
+        "total_order_value": 23088.44,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 147,
+        "total_order_value": 12575.56,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 148,
+        "total_order_value": 13198.91,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 23,
+        "cluster": 1
+    },
+    {
+        "customer_id": 149,
+        "total_order_value": 33938.53,
+        "basket_size": 7.0,
+        "purchase_frequency": 9,
+        "age": 17,
+        "cluster": 0
+    },
+    {
+        "customer_id": 150,
+        "total_order_value": 5185.450000000001,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 151,
+        "total_order_value": 17788.06,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 152,
+        "total_order_value": 21310.68,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 153,
+        "total_order_value": 12295.77,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 154,
+        "total_order_value": 23951.48,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 50,
+        "cluster": 1
+    },
+    {
+        "customer_id": 155,
+        "total_order_value": 17150.37,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 156,
+        "total_order_value": 32438.15,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 74,
+        "cluster": 0
+    },
+    {
+        "customer_id": 157,
+        "total_order_value": 15069.18,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 51,
+        "cluster": 1
+    },
+    {
+        "customer_id": 158,
+        "total_order_value": 12563.3,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 159,
+        "total_order_value": 29162.39,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 26,
+        "cluster": 1
+    },
+    {
+        "customer_id": 160,
+        "total_order_value": 15535.07,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 161,
+        "total_order_value": 43834.76,
+        "basket_size": 7.363636363636363,
+        "purchase_frequency": 11,
+        "age": 40,
+        "cluster": 0
+    },
+    {
+        "customer_id": 162,
+        "total_order_value": 15763.12,
+        "basket_size": 4.5,
+        "purchase_frequency": 8,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 163,
+        "total_order_value": 2251.62,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 164,
+        "total_order_value": 24295.81,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 9,
+        "age": 29,
+        "cluster": 0
+    },
+    {
+        "customer_id": 165,
+        "total_order_value": 18378.1,
+        "basket_size": 9.0,
+        "purchase_frequency": 4,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 166,
+        "total_order_value": 32456.58,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 40,
+        "cluster": 0
+    },
+    {
+        "customer_id": 167,
+        "total_order_value": 21187.06,
+        "basket_size": 8.8,
+        "purchase_frequency": 5,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 168,
+        "total_order_value": 12291.8,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 169,
+        "total_order_value": 9201.080000000002,
+        "basket_size": 5.0,
+        "purchase_frequency": 3,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 170,
+        "total_order_value": 11057.36,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 171,
+        "total_order_value": 35897.69,
+        "basket_size": 8.142857142857142,
+        "purchase_frequency": 7,
+        "age": 24,
+        "cluster": 0
+    },
+    {
+        "customer_id": 172,
+        "total_order_value": 23116.83,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 173,
+        "total_order_value": 21187.85,
+        "basket_size": 5.9,
+        "purchase_frequency": 10,
+        "age": 57,
+        "cluster": 0
+    },
+    {
+        "customer_id": 174,
+        "total_order_value": 21656.33,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 175,
+        "total_order_value": 18655.53,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 176,
+        "total_order_value": 40519.81,
+        "basket_size": 8.428571428571429,
+        "purchase_frequency": 7,
+        "age": 72,
+        "cluster": 0
+    },
+    {
+        "customer_id": 177,
+        "total_order_value": 21870.02,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 178,
+        "total_order_value": 22368.67,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 179,
+        "total_order_value": 26069.59,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 180,
+        "total_order_value": 7024.08,
+        "basket_size": 7.5,
+        "purchase_frequency": 2,
+        "age": 51,
+        "cluster": 1
+    },
+    {
+        "customer_id": 181,
+        "total_order_value": 19192.79,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 4,
+        "cluster": 1
+    },
+    {
+        "customer_id": 182,
+        "total_order_value": 23256.42,
+        "basket_size": 9.5,
+        "purchase_frequency": 6,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 183,
+        "total_order_value": 11805.98,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 3,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 184,
+        "total_order_value": 28499.27,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 68,
+        "cluster": 0
+    },
+    {
+        "customer_id": 185,
+        "total_order_value": 21962.59,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 186,
+        "total_order_value": 25052.94,
+        "basket_size": 5.777777777777778,
+        "purchase_frequency": 9,
+        "age": 10,
+        "cluster": 0
+    },
+    {
+        "customer_id": 187,
+        "total_order_value": 8107.01,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 188,
+        "total_order_value": 9565.51,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 189,
+        "total_order_value": 30017.45,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 56,
+        "cluster": 0
+    },
+    {
+        "customer_id": 190,
+        "total_order_value": 30858.52,
+        "basket_size": 7.571428571428571,
+        "purchase_frequency": 7,
+        "age": 16,
+        "cluster": 0
+    },
+    {
+        "customer_id": 191,
+        "total_order_value": 9184.81,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 192,
+        "total_order_value": 26114.4,
+        "basket_size": 5.714285714285714,
+        "purchase_frequency": 7,
+        "age": 65,
+        "cluster": 0
+    },
+    {
+        "customer_id": 193,
+        "total_order_value": 31857.22,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 81,
+        "cluster": 0
+    },
+    {
+        "customer_id": 194,
+        "total_order_value": 20555.82,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 195,
+        "total_order_value": 21424.97,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 196,
+        "total_order_value": 15812.79,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 197,
+        "total_order_value": 20993.14,
+        "basket_size": 5.75,
+        "purchase_frequency": 8,
+        "age": 66,
+        "cluster": 0
+    },
+    {
+        "customer_id": 198,
+        "total_order_value": 33241.61,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 58,
+        "cluster": 0
+    },
+    {
+        "customer_id": 199,
+        "total_order_value": 19001.41,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 200,
+        "total_order_value": 22898.97,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 201,
+        "total_order_value": 15588.96,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 202,
+        "total_order_value": 9317.49,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 40,
+        "cluster": 1
+    },
+    {
+        "customer_id": 203,
+        "total_order_value": 18773.72,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 204,
+        "total_order_value": 11737.65,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 205,
+        "total_order_value": 29189.43,
+        "basket_size": 8.428571428571429,
+        "purchase_frequency": 7,
+        "age": 78,
+        "cluster": 0
+    },
+    {
+        "customer_id": 206,
+        "total_order_value": 48324.72,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 12,
+        "age": 69,
+        "cluster": 0
+    },
+    {
+        "customer_id": 207,
+        "total_order_value": 27085.76,
+        "basket_size": 5.4,
+        "purchase_frequency": 10,
+        "age": 29,
+        "cluster": 0
+    },
+    {
+        "customer_id": 208,
+        "total_order_value": 27431.39,
+        "basket_size": 8.142857142857142,
+        "purchase_frequency": 7,
+        "age": 8,
+        "cluster": 0
+    },
+    {
+        "customer_id": 209,
+        "total_order_value": 27876.85,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 210,
+        "total_order_value": 22019.06,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 211,
+        "total_order_value": 20319.96,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 212,
+        "total_order_value": 34186.3,
+        "basket_size": 9.333333333333334,
+        "purchase_frequency": 6,
+        "age": 66,
+        "cluster": 0
+    },
+    {
+        "customer_id": 213,
+        "total_order_value": 21601.83,
+        "basket_size": 5.888888888888889,
+        "purchase_frequency": 9,
+        "age": 61,
+        "cluster": 0
+    },
+    {
+        "customer_id": 214,
+        "total_order_value": 23378.58,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 215,
+        "total_order_value": 13967.13,
+        "basket_size": 9.666666666666666,
+        "purchase_frequency": 3,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 216,
+        "total_order_value": 9810.5,
+        "basket_size": 5.5,
+        "purchase_frequency": 2,
+        "age": 88,
+        "cluster": 2
+    },
+    {
+        "customer_id": 217,
+        "total_order_value": 9058.05,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 8,
+        "cluster": 1
+    },
+    {
+        "customer_id": 218,
+        "total_order_value": 23840.06,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 219,
+        "total_order_value": 5162.19,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 220,
+        "total_order_value": 11445.41,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 221,
+        "total_order_value": 16733.35,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 222,
+        "total_order_value": 7624.349999999999,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 223,
+        "total_order_value": 27710.64,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 23,
+        "cluster": 0
+    },
+    {
+        "customer_id": 224,
+        "total_order_value": 19031.39,
+        "basket_size": 6.142857142857143,
+        "purchase_frequency": 7,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 225,
+        "total_order_value": 1280.04,
+        "basket_size": 3.0,
+        "purchase_frequency": 3,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 226,
+        "total_order_value": 18291.66,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 227,
+        "total_order_value": 14769.73,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 228,
+        "total_order_value": 28068.68,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 78,
+        "cluster": 0
+    },
+    {
+        "customer_id": 229,
+        "total_order_value": 13883.7,
+        "basket_size": 5.8,
+        "purchase_frequency": 5,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 230,
+        "total_order_value": 33356.6,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 55,
+        "cluster": 0
+    },
+    {
+        "customer_id": 231,
+        "total_order_value": 13401.18,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 232,
+        "total_order_value": 10728.46,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 233,
+        "total_order_value": 18390.74,
+        "basket_size": 8.0,
+        "purchase_frequency": 3,
+        "age": 51,
+        "cluster": 1
+    },
+    {
+        "customer_id": 234,
+        "total_order_value": 25909.85,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 86,
+        "cluster": 0
+    },
+    {
+        "customer_id": 235,
+        "total_order_value": 8113.65,
+        "basket_size": 5.0,
+        "purchase_frequency": 3,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 236,
+        "total_order_value": 18694.45,
+        "basket_size": 8.0,
+        "purchase_frequency": 5,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 237,
+        "total_order_value": 19075.38,
+        "basket_size": 8.4,
+        "purchase_frequency": 5,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 238,
+        "total_order_value": 35070.89,
+        "basket_size": 7.0,
+        "purchase_frequency": 9,
+        "age": 88,
+        "cluster": 0
+    },
+    {
+        "customer_id": 239,
+        "total_order_value": 28115.800000000003,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 240,
+        "total_order_value": 41609.07,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 12,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 241,
+        "total_order_value": 13199.62,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 242,
+        "total_order_value": 16861.86,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 243,
+        "total_order_value": 24899.94,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 244,
+        "total_order_value": 21237.7,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 245,
+        "total_order_value": 42586.76,
+        "basket_size": 7.0,
+        "purchase_frequency": 10,
+        "age": 1,
+        "cluster": 0
+    },
+    {
+        "customer_id": 246,
+        "total_order_value": 5438.42,
+        "basket_size": 4.25,
+        "purchase_frequency": 4,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 247,
+        "total_order_value": 22534.98,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 248,
+        "total_order_value": 20077.78,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 249,
+        "total_order_value": 15054.06,
+        "basket_size": 5.5,
+        "purchase_frequency": 6,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 250,
+        "total_order_value": 14512.23,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 251,
+        "total_order_value": 20393.56,
+        "basket_size": 6.142857142857143,
+        "purchase_frequency": 7,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 252,
+        "total_order_value": 16825.07,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 83,
+        "cluster": 2
+    },
+    {
+        "customer_id": 253,
+        "total_order_value": 10395.73,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 254,
+        "total_order_value": 15239.7,
+        "basket_size": 5.714285714285714,
+        "purchase_frequency": 7,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 255,
+        "total_order_value": 21310.58,
+        "basket_size": 5.875,
+        "purchase_frequency": 8,
+        "age": 49,
+        "cluster": 0
+    },
+    {
+        "customer_id": 256,
+        "total_order_value": 23102.07,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 257,
+        "total_order_value": 17059.3,
+        "basket_size": 5.166666666666667,
+        "purchase_frequency": 6,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 258,
+        "total_order_value": 15978.86,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 259,
+        "total_order_value": 22013.31,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 4,
+        "cluster": 1
+    },
+    {
+        "customer_id": 260,
+        "total_order_value": 16510.07,
+        "basket_size": 5.111111111111111,
+        "purchase_frequency": 9,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 261,
+        "total_order_value": 33292.62,
+        "basket_size": 6.727272727272728,
+        "purchase_frequency": 11,
+        "age": 30,
+        "cluster": 0
+    },
+    {
+        "customer_id": 262,
+        "total_order_value": 22243.32,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 263,
+        "total_order_value": 16940.09,
+        "basket_size": 5.571428571428571,
+        "purchase_frequency": 7,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 264,
+        "total_order_value": 41702.3,
+        "basket_size": 7.8,
+        "purchase_frequency": 10,
+        "age": 74,
+        "cluster": 0
+    },
+    {
+        "customer_id": 265,
+        "total_order_value": 25949.72,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 266,
+        "total_order_value": 25051.02,
+        "basket_size": 7.25,
+        "purchase_frequency": 8,
+        "age": 51,
+        "cluster": 0
+    },
+    {
+        "customer_id": 267,
+        "total_order_value": 19420.67,
+        "basket_size": 5.875,
+        "purchase_frequency": 8,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 268,
+        "total_order_value": 23575.62,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 6,
+        "age": 40,
+        "cluster": 1
+    },
+    {
+        "customer_id": 269,
+        "total_order_value": 9945.6,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 270,
+        "total_order_value": 33107.74,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 84,
+        "cluster": 0
+    },
+    {
+        "customer_id": 271,
+        "total_order_value": 14833.63,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 32,
+        "cluster": 1
+    },
+    {
+        "customer_id": 272,
+        "total_order_value": 20262.74,
+        "basket_size": 9.5,
+        "purchase_frequency": 4,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 273,
+        "total_order_value": 15009.29,
+        "basket_size": 6.125,
+        "purchase_frequency": 8,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 274,
+        "total_order_value": 29606.88,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 275,
+        "total_order_value": 23801.37,
+        "basket_size": 8.0,
+        "purchase_frequency": 5,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 276,
+        "total_order_value": 12645.16,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 277,
+        "total_order_value": 30700.59,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 26,
+        "cluster": 0
+    },
+    {
+        "customer_id": 278,
+        "total_order_value": 18306.8,
+        "basket_size": 6.625,
+        "purchase_frequency": 8,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 279,
+        "total_order_value": 33857.6,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 2,
+        "cluster": 0
+    },
+    {
+        "customer_id": 280,
+        "total_order_value": 30263.58,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 9,
+        "age": 44,
+        "cluster": 0
+    },
+    {
+        "customer_id": 281,
+        "total_order_value": 21314.99,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 282,
+        "total_order_value": 26397.77,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 283,
+        "total_order_value": 37765.9,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 9,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 284,
+        "total_order_value": 13248.26,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 285,
+        "total_order_value": 47950.28,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 78,
+        "cluster": 0
+    },
+    {
+        "customer_id": 286,
+        "total_order_value": 38825.09,
+        "basket_size": 7.444444444444445,
+        "purchase_frequency": 9,
+        "age": 28,
+        "cluster": 0
+    },
+    {
+        "customer_id": 287,
+        "total_order_value": 10432.3,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 288,
+        "total_order_value": 20942.33,
+        "basket_size": 8.8,
+        "purchase_frequency": 5,
+        "age": 46,
+        "cluster": 1
+    },
+    {
+        "customer_id": 289,
+        "total_order_value": 12883.21,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 24,
+        "cluster": 1
+    },
+    {
+        "customer_id": 290,
+        "total_order_value": 3506.47,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 291,
+        "total_order_value": 18076.5,
+        "basket_size": 5.5,
+        "purchase_frequency": 4,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 292,
+        "total_order_value": 21441.48,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 293,
+        "total_order_value": 37088.2,
+        "basket_size": 7.5,
+        "purchase_frequency": 12,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 294,
+        "total_order_value": 11274.58,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 295,
+        "total_order_value": 15539.06,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 296,
+        "total_order_value": 15580.61,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 297,
+        "total_order_value": 28303.53,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 298,
+        "total_order_value": 7606.89,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 299,
+        "total_order_value": 17927.4,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 300,
+        "total_order_value": 21980.85,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 301,
+        "total_order_value": 12611.79,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 79,
+        "cluster": 2
+    },
+    {
+        "customer_id": 302,
+        "total_order_value": 41326.38,
+        "basket_size": 7.5,
+        "purchase_frequency": 10,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 303,
+        "total_order_value": 28868.55,
+        "basket_size": 7.25,
+        "purchase_frequency": 8,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 304,
+        "total_order_value": 19112.29,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 74,
+        "cluster": 2
+    },
+    {
+        "customer_id": 305,
+        "total_order_value": 14070.259999999998,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 306,
+        "total_order_value": 22919.39,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 92,
+        "cluster": 2
+    },
+    {
+        "customer_id": 307,
+        "total_order_value": 22289.01,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 50,
+        "cluster": 0
+    },
+    {
+        "customer_id": 308,
+        "total_order_value": 15702.72,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 309,
+        "total_order_value": 25135.04,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 310,
+        "total_order_value": 38896.1,
+        "basket_size": 8.0,
+        "purchase_frequency": 6,
+        "age": 80,
+        "cluster": 0
+    },
+    {
+        "customer_id": 311,
+        "total_order_value": 17358.64,
+        "basket_size": 5.5,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 312,
+        "total_order_value": 17621.940000000002,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 43,
+        "cluster": 1
+    },
+    {
+        "customer_id": 313,
+        "total_order_value": 2322.7,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 53,
+        "cluster": 2
+    },
+    {
+        "customer_id": 314,
+        "total_order_value": 21495.480000000003,
+        "basket_size": 4.75,
+        "purchase_frequency": 8,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 315,
+        "total_order_value": 26966.21,
+        "basket_size": 7.857142857142857,
+        "purchase_frequency": 7,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 316,
+        "total_order_value": 18210.97,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 317,
+        "total_order_value": 24539.77,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 318,
+        "total_order_value": 19317.99,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 319,
+        "total_order_value": 35339.1,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 73,
+        "cluster": 0
+    },
+    {
+        "customer_id": 320,
+        "total_order_value": 46707.11,
+        "basket_size": 7.8,
+        "purchase_frequency": 10,
+        "age": 39,
+        "cluster": 0
+    },
+    {
+        "customer_id": 321,
+        "total_order_value": 18095.69,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 4,
+        "cluster": 1
+    },
+    {
+        "customer_id": 322,
+        "total_order_value": 18757.17,
+        "basket_size": 5.0,
+        "purchase_frequency": 7,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 323,
+        "total_order_value": 28363.85,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 324,
+        "total_order_value": 23116.82,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 325,
+        "total_order_value": 37217.130000000005,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 28,
+        "cluster": 0
+    },
+    {
+        "customer_id": 326,
+        "total_order_value": 12673.9,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 327,
+        "total_order_value": 43063.84,
+        "basket_size": 8.0,
+        "purchase_frequency": 7,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 328,
+        "total_order_value": 9120.95,
+        "basket_size": 5.5,
+        "purchase_frequency": 4,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 329,
+        "total_order_value": 28603.86,
+        "basket_size": 6.0,
+        "purchase_frequency": 11,
+        "age": 49,
+        "cluster": 0
+    },
+    {
+        "customer_id": 330,
+        "total_order_value": 17678.670000000002,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 331,
+        "total_order_value": 23751.59,
+        "basket_size": 5.625,
+        "purchase_frequency": 8,
+        "age": 33,
+        "cluster": 0
+    },
+    {
+        "customer_id": 332,
+        "total_order_value": 23041.77,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 333,
+        "total_order_value": 29500.57,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 59,
+        "cluster": 0
+    },
+    {
+        "customer_id": 334,
+        "total_order_value": 9964.73,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 335,
+        "total_order_value": 22763.460000000003,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 336,
+        "total_order_value": 37614.62,
+        "basket_size": 7.0,
+        "purchase_frequency": 11,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 337,
+        "total_order_value": 31778.13,
+        "basket_size": 8.0,
+        "purchase_frequency": 9,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 338,
+        "total_order_value": 29368.86,
+        "basket_size": 6.5,
+        "purchase_frequency": 8,
+        "age": 69,
+        "cluster": 0
+    },
+    {
+        "customer_id": 339,
+        "total_order_value": 12273.660000000002,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 79,
+        "cluster": 2
+    },
+    {
+        "customer_id": 340,
+        "total_order_value": 5346.38,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 341,
+        "total_order_value": 11705.58,
+        "basket_size": 4.25,
+        "purchase_frequency": 4,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 342,
+        "total_order_value": 21074.17,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 343,
+        "total_order_value": 19093.95,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 344,
+        "total_order_value": 10612.25,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 345,
+        "total_order_value": 23332.64,
+        "basket_size": 7.0,
+        "purchase_frequency": 7,
+        "age": 55,
+        "cluster": 0
+    },
+    {
+        "customer_id": 346,
+        "total_order_value": 42426.65,
+        "basket_size": 7.272727272727272,
+        "purchase_frequency": 11,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 347,
+        "total_order_value": 28573.78,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 9,
+        "age": 18,
+        "cluster": 0
+    },
+    {
+        "customer_id": 348,
+        "total_order_value": 33005.56,
+        "basket_size": 8.25,
+        "purchase_frequency": 8,
+        "age": 32,
+        "cluster": 0
+    },
+    {
+        "customer_id": 349,
+        "total_order_value": 9852.14,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 3,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 350,
+        "total_order_value": 41565.09,
+        "basket_size": 7.111111111111111,
+        "purchase_frequency": 9,
+        "age": 36,
+        "cluster": 0
+    },
+    {
+        "customer_id": 351,
+        "total_order_value": 28642.12,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 352,
+        "total_order_value": 5808.1,
+        "basket_size": 10.0,
+        "purchase_frequency": 1,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 353,
+        "total_order_value": 19984.03,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 5,
+        "cluster": 1
+    },
+    {
+        "customer_id": 354,
+        "total_order_value": 8313.5,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 355,
+        "total_order_value": 20830.15,
+        "basket_size": 5.625,
+        "purchase_frequency": 8,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 356,
+        "total_order_value": 37513.51,
+        "basket_size": 8.125,
+        "purchase_frequency": 8,
+        "age": 73,
+        "cluster": 0
+    },
+    {
+        "customer_id": 357,
+        "total_order_value": 22270.99,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 358,
+        "total_order_value": 21265.09,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 359,
+        "total_order_value": 33155.990000000005,
+        "basket_size": 8.25,
+        "purchase_frequency": 8,
+        "age": 84,
+        "cluster": 0
+    },
+    {
+        "customer_id": 360,
+        "total_order_value": 31459.28,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 361,
+        "total_order_value": 28845.27,
+        "basket_size": 7.571428571428571,
+        "purchase_frequency": 7,
+        "age": 5,
+        "cluster": 0
+    },
+    {
+        "customer_id": 362,
+        "total_order_value": 29001.38,
+        "basket_size": 7.125,
+        "purchase_frequency": 8,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 363,
+        "total_order_value": 40314.55,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 85,
+        "cluster": 0
+    },
+    {
+        "customer_id": 364,
+        "total_order_value": 8493.39,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 365,
+        "total_order_value": 22600.23,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 366,
+        "total_order_value": 16636.29,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 367,
+        "total_order_value": 20203.08,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 368,
+        "total_order_value": 27436.06,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 72,
+        "cluster": 0
+    },
+    {
+        "customer_id": 369,
+        "total_order_value": 20115.53,
+        "basket_size": 9.25,
+        "purchase_frequency": 4,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 370,
+        "total_order_value": 27501.47,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 59,
+        "cluster": 0
+    },
+    {
+        "customer_id": 371,
+        "total_order_value": 24510.05,
+        "basket_size": 5.6,
+        "purchase_frequency": 10,
+        "age": 94,
+        "cluster": 0
+    },
+    {
+        "customer_id": 372,
+        "total_order_value": 12047.67,
+        "basket_size": 4.4,
+        "purchase_frequency": 5,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 373,
+        "total_order_value": 7138.56,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 374,
+        "total_order_value": 31394.83,
+        "basket_size": 6.2,
+        "purchase_frequency": 10,
+        "age": 12,
+        "cluster": 0
+    },
+    {
+        "customer_id": 375,
+        "total_order_value": 38638.02,
+        "basket_size": 8.5,
+        "purchase_frequency": 8,
+        "age": 95,
+        "cluster": 0
+    },
+    {
+        "customer_id": 376,
+        "total_order_value": 23890.94,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 377,
+        "total_order_value": 34156.79,
+        "basket_size": 8.142857142857142,
+        "purchase_frequency": 7,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 378,
+        "total_order_value": 16784.71,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 379,
+        "total_order_value": 8647.36,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 3,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 380,
+        "total_order_value": 5800.83,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 381,
+        "total_order_value": 25821.37,
+        "basket_size": 7.833333333333333,
+        "purchase_frequency": 6,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 382,
+        "total_order_value": 9659.17,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 383,
+        "total_order_value": 13187.67,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 37,
+        "cluster": 1
+    },
+    {
+        "customer_id": 384,
+        "total_order_value": 25965.39,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 385,
+        "total_order_value": 36699.08,
+        "basket_size": 6.181818181818182,
+        "purchase_frequency": 11,
+        "age": 66,
+        "cluster": 0
+    },
+    {
+        "customer_id": 386,
+        "total_order_value": 37802.24,
+        "basket_size": 7.222222222222222,
+        "purchase_frequency": 9,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 387,
+        "total_order_value": 14832.45,
+        "basket_size": 7.833333333333333,
+        "purchase_frequency": 6,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 388,
+        "total_order_value": 19353.68,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 31,
+        "cluster": 1
+    },
+    {
+        "customer_id": 389,
+        "total_order_value": 27417.79,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 24,
+        "cluster": 0
+    },
+    {
+        "customer_id": 390,
+        "total_order_value": 18635.42,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 85,
+        "cluster": 2
+    },
+    {
+        "customer_id": 391,
+        "total_order_value": 29218.56,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 392,
+        "total_order_value": 26806.4,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 393,
+        "total_order_value": 19223.95,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 394,
+        "total_order_value": 36012.69,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 50,
+        "cluster": 0
+    },
+    {
+        "customer_id": 395,
+        "total_order_value": 17535.92,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 396,
+        "total_order_value": 35063.39,
+        "basket_size": 7.857142857142857,
+        "purchase_frequency": 7,
+        "age": 95,
+        "cluster": 0
+    },
+    {
+        "customer_id": 397,
+        "total_order_value": 21486.32,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 398,
+        "total_order_value": 24514.59,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 399,
+        "total_order_value": 15184.01,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 400,
+        "total_order_value": 25724.76,
+        "basket_size": 7.0,
+        "purchase_frequency": 7,
+        "age": 38,
+        "cluster": 0
+    },
+    {
+        "customer_id": 401,
+        "total_order_value": 23979.62,
+        "basket_size": 6.6,
+        "purchase_frequency": 10,
+        "age": 69,
+        "cluster": 0
+    },
+    {
+        "customer_id": 402,
+        "total_order_value": 28267.81,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 10,
+        "cluster": 0
+    },
+    {
+        "customer_id": 403,
+        "total_order_value": 14120.21,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 404,
+        "total_order_value": 24756.48,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 405,
+        "total_order_value": 21317.23,
+        "basket_size": 8.8,
+        "purchase_frequency": 5,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 406,
+        "total_order_value": 14932.72,
+        "basket_size": 5.333333333333333,
+        "purchase_frequency": 6,
+        "age": 13,
+        "cluster": 1
+    },
+    {
+        "customer_id": 407,
+        "total_order_value": 12374.45,
+        "basket_size": 5.0,
+        "purchase_frequency": 7,
+        "age": 5,
+        "cluster": 1
+    },
+    {
+        "customer_id": 408,
+        "total_order_value": 18078.06,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 409,
+        "total_order_value": 31959.7,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 26,
+        "cluster": 0
+    },
+    {
+        "customer_id": 410,
+        "total_order_value": 10820.06,
+        "basket_size": 5.625,
+        "purchase_frequency": 8,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 411,
+        "total_order_value": 19834.27,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 412,
+        "total_order_value": 8623.83,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 413,
+        "total_order_value": 20885.74,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 414,
+        "total_order_value": 19243.7,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 415,
+        "total_order_value": 25494.74,
+        "basket_size": 7.125,
+        "purchase_frequency": 8,
+        "age": 90,
+        "cluster": 0
+    },
+    {
+        "customer_id": 416,
+        "total_order_value": 29548.41,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 13,
+        "cluster": 0
+    },
+    {
+        "customer_id": 417,
+        "total_order_value": 9091.15,
+        "basket_size": 5.333333333333333,
+        "purchase_frequency": 3,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 418,
+        "total_order_value": 27731.08,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 419,
+        "total_order_value": 18469.06,
+        "basket_size": 8.8,
+        "purchase_frequency": 5,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 420,
+        "total_order_value": 29720.94,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 421,
+        "total_order_value": 22075.64,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 44,
+        "cluster": 0
+    },
+    {
+        "customer_id": 422,
+        "total_order_value": 21211.76,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 423,
+        "total_order_value": 16534.8,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 424,
+        "total_order_value": 21994.8,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 425,
+        "total_order_value": 5790.65,
+        "basket_size": 5.0,
+        "purchase_frequency": 2,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 426,
+        "total_order_value": 9992.59,
+        "basket_size": 4.5,
+        "purchase_frequency": 4,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 427,
+        "total_order_value": 13375.54,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 428,
+        "total_order_value": 8394.07,
+        "basket_size": 4.333333333333333,
+        "purchase_frequency": 3,
+        "age": 62,
+        "cluster": 2
+    },
+    {
+        "customer_id": 429,
+        "total_order_value": 25960.29,
+        "basket_size": 7.25,
+        "purchase_frequency": 8,
+        "age": 2,
+        "cluster": 0
+    },
+    {
+        "customer_id": 430,
+        "total_order_value": 6234.48,
+        "basket_size": 8.0,
+        "purchase_frequency": 1,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 431,
+        "total_order_value": 22999.24,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 432,
+        "total_order_value": 14569.8,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 433,
+        "total_order_value": 24363.38,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 434,
+        "total_order_value": 21811.39,
+        "basket_size": 6.2727272727272725,
+        "purchase_frequency": 11,
+        "age": 87,
+        "cluster": 0
+    },
+    {
+        "customer_id": 435,
+        "total_order_value": 22146.51,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 436,
+        "total_order_value": 19980.63,
+        "basket_size": 5.888888888888889,
+        "purchase_frequency": 9,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 437,
+        "total_order_value": 37574.06,
+        "basket_size": 8.285714285714286,
+        "purchase_frequency": 7,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 438,
+        "total_order_value": 30375.17,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 11,
+        "cluster": 0
+    },
+    {
+        "customer_id": 439,
+        "total_order_value": 13340.11,
+        "basket_size": 5.428571428571429,
+        "purchase_frequency": 7,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 440,
+        "total_order_value": 8907.64,
+        "basket_size": 5.0,
+        "purchase_frequency": 4,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 441,
+        "total_order_value": 29688.71,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 61,
+        "cluster": 0
+    },
+    {
+        "customer_id": 442,
+        "total_order_value": 11935.6,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 443,
+        "total_order_value": 10981.23,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 444,
+        "total_order_value": 6504.75,
+        "basket_size": 5.0,
+        "purchase_frequency": 3,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 445,
+        "total_order_value": 13466.41,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 446,
+        "total_order_value": 19241.55,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 447,
+        "total_order_value": 30116.95,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 8,
+        "cluster": 0
+    },
+    {
+        "customer_id": 448,
+        "total_order_value": 27034.72,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 47,
+        "cluster": 0
+    },
+    {
+        "customer_id": 449,
+        "total_order_value": 1724.91,
+        "basket_size": 3.5,
+        "purchase_frequency": 2,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 450,
+        "total_order_value": 41455.7,
+        "basket_size": 7.090909090909091,
+        "purchase_frequency": 11,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 451,
+        "total_order_value": 4487.2,
+        "basket_size": 6.5,
+        "purchase_frequency": 2,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 452,
+        "total_order_value": 26045.55,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 453,
+        "total_order_value": 16838.620000000003,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 454,
+        "total_order_value": 21866.64,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 455,
+        "total_order_value": 23251.25,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 456,
+        "total_order_value": 13496.56,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 457,
+        "total_order_value": 3798.42,
+        "basket_size": 2.6666666666666665,
+        "purchase_frequency": 3,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 458,
+        "total_order_value": 8352.65,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 459,
+        "total_order_value": 13776.4,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 35,
+        "cluster": 1
+    },
+    {
+        "customer_id": 460,
+        "total_order_value": 22507.4,
+        "basket_size": 6.4,
+        "purchase_frequency": 10,
+        "age": 34,
+        "cluster": 0
+    },
+    {
+        "customer_id": 461,
+        "total_order_value": 35246.36,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 5,
+        "cluster": 0
+    },
+    {
+        "customer_id": 462,
+        "total_order_value": 11533.77,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 463,
+        "total_order_value": 15290.46,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 464,
+        "total_order_value": 18941.04,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 465,
+        "total_order_value": 27253.28,
+        "basket_size": 9.25,
+        "purchase_frequency": 4,
+        "age": 65,
+        "cluster": 2
+    },
+    {
+        "customer_id": 466,
+        "total_order_value": 8010.78,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 467,
+        "total_order_value": 34042.72,
+        "basket_size": 7.125,
+        "purchase_frequency": 8,
+        "age": 71,
+        "cluster": 0
+    },
+    {
+        "customer_id": 468,
+        "total_order_value": 22652.5,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 469,
+        "total_order_value": 32283.66,
+        "basket_size": 6.857142857142857,
+        "purchase_frequency": 7,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 470,
+        "total_order_value": 17786.59,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 471,
+        "total_order_value": 25789.8,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 472,
+        "total_order_value": 16158.33,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 6,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 473,
+        "total_order_value": 24002.28,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 474,
+        "total_order_value": 11684.75,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 475,
+        "total_order_value": 21497.08,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 476,
+        "total_order_value": 29713.41,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 477,
+        "total_order_value": 30033.6,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 23,
+        "cluster": 0
+    },
+    {
+        "customer_id": 478,
+        "total_order_value": 20026.99,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 85,
+        "cluster": 2
+    },
+    {
+        "customer_id": 479,
+        "total_order_value": 17279.64,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 480,
+        "total_order_value": 12429.21,
+        "basket_size": 6.5,
+        "purchase_frequency": 2,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 481,
+        "total_order_value": 22527.74,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 482,
+        "total_order_value": 6507.21,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 98,
+        "cluster": 2
+    },
+    {
+        "customer_id": 483,
+        "total_order_value": 14366.53,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 32,
+        "cluster": 1
+    },
+    {
+        "customer_id": 484,
+        "total_order_value": 15571.63,
+        "basket_size": 5.8,
+        "purchase_frequency": 5,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 485,
+        "total_order_value": 20750.26,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 486,
+        "total_order_value": 13015.22,
+        "basket_size": 4.166666666666667,
+        "purchase_frequency": 6,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 487,
+        "total_order_value": 9517.41,
+        "basket_size": 6.0,
+        "purchase_frequency": 3,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 488,
+        "total_order_value": 37556.9,
+        "basket_size": 7.0,
+        "purchase_frequency": 11,
+        "age": 13,
+        "cluster": 0
+    },
+    {
+        "customer_id": 489,
+        "total_order_value": 13096.48,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 490,
+        "total_order_value": 13713.88,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 491,
+        "total_order_value": 7314.72,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 492,
+        "total_order_value": 5869.36,
+        "basket_size": 9.0,
+        "purchase_frequency": 3,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 493,
+        "total_order_value": 13559.79,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 494,
+        "total_order_value": 8803.79,
+        "basket_size": 4.0,
+        "purchase_frequency": 5,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 495,
+        "total_order_value": 10435.78,
+        "basket_size": 3.2,
+        "purchase_frequency": 5,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 496,
+        "total_order_value": 18833.37,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 497,
+        "total_order_value": 14511.68,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 498,
+        "total_order_value": 7637.86,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 499,
+        "total_order_value": 13715.22,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 500,
+        "total_order_value": 13243.21,
+        "basket_size": 8.0,
+        "purchase_frequency": 3,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 501,
+        "total_order_value": 24355.82,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 502,
+        "total_order_value": 20977.4,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 503,
+        "total_order_value": 21158.93,
+        "basket_size": 6.5,
+        "purchase_frequency": 8,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 504,
+        "total_order_value": 46326.08,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 86,
+        "cluster": 0
+    },
+    {
+        "customer_id": 505,
+        "total_order_value": 16810.17,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 506,
+        "total_order_value": 16528.61,
+        "basket_size": 6.5,
+        "purchase_frequency": 8,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 507,
+        "total_order_value": 22988.48,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 508,
+        "total_order_value": 22068.04,
+        "basket_size": 5.428571428571429,
+        "purchase_frequency": 7,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 509,
+        "total_order_value": 28519.71,
+        "basket_size": 6.625,
+        "purchase_frequency": 8,
+        "age": 14,
+        "cluster": 0
+    },
+    {
+        "customer_id": 510,
+        "total_order_value": 32436.73,
+        "basket_size": 8.833333333333334,
+        "purchase_frequency": 6,
+        "age": 82,
+        "cluster": 0
+    },
+    {
+        "customer_id": 511,
+        "total_order_value": 21607.63,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 512,
+        "total_order_value": 23153.81,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 513,
+        "total_order_value": 7115.41,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 514,
+        "total_order_value": 17730.25,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 43,
+        "cluster": 1
+    },
+    {
+        "customer_id": 515,
+        "total_order_value": 28287.5,
+        "basket_size": 7.0,
+        "purchase_frequency": 8,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 516,
+        "total_order_value": 12676.25,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 85,
+        "cluster": 2
+    },
+    {
+        "customer_id": 517,
+        "total_order_value": 14534.23,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 518,
+        "total_order_value": 31957.22,
+        "basket_size": 8.0,
+        "purchase_frequency": 8,
+        "age": 64,
+        "cluster": 0
+    },
+    {
+        "customer_id": 519,
+        "total_order_value": 15625.27,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 520,
+        "total_order_value": 16739.760000000002,
+        "basket_size": 8.0,
+        "purchase_frequency": 5,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 521,
+        "total_order_value": 16025.08,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 3,
+        "cluster": 1
+    },
+    {
+        "customer_id": 522,
+        "total_order_value": 12925.41,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 523,
+        "total_order_value": 25786.38,
+        "basket_size": 5.0,
+        "purchase_frequency": 9,
+        "age": 58,
+        "cluster": 0
+    },
+    {
+        "customer_id": 524,
+        "total_order_value": 31962.11,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 525,
+        "total_order_value": 16212.23,
+        "basket_size": 8.0,
+        "purchase_frequency": 3,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 526,
+        "total_order_value": 13047.89,
+        "basket_size": 4.0,
+        "purchase_frequency": 6,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 527,
+        "total_order_value": 41213.85,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 9,
+        "age": 62,
+        "cluster": 0
+    },
+    {
+        "customer_id": 528,
+        "total_order_value": 39995.94,
+        "basket_size": 8.285714285714286,
+        "purchase_frequency": 7,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 529,
+        "total_order_value": 9786.04,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 530,
+        "total_order_value": 19570.44,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 26,
+        "cluster": 1
+    },
+    {
+        "customer_id": 531,
+        "total_order_value": 14097.96,
+        "basket_size": 5.8,
+        "purchase_frequency": 5,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 532,
+        "total_order_value": 15045.89,
+        "basket_size": 8.5,
+        "purchase_frequency": 6,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 533,
+        "total_order_value": 40861.41,
+        "basket_size": 7.363636363636363,
+        "purchase_frequency": 11,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 534,
+        "total_order_value": 35002.33,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 535,
+        "total_order_value": 22530.28,
+        "basket_size": 6.857142857142857,
+        "purchase_frequency": 7,
+        "age": 56,
+        "cluster": 0
+    },
+    {
+        "customer_id": 536,
+        "total_order_value": 8751.19,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 537,
+        "total_order_value": 7183.5,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 538,
+        "total_order_value": 12564.33,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 539,
+        "total_order_value": 16697.28,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 3,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 540,
+        "total_order_value": 12252.88,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 541,
+        "total_order_value": 5337.370000000001,
+        "basket_size": 5.0,
+        "purchase_frequency": 3,
+        "age": 23,
+        "cluster": 1
+    },
+    {
+        "customer_id": 542,
+        "total_order_value": 22809.04,
+        "basket_size": 6.0,
+        "purchase_frequency": 9,
+        "age": 51,
+        "cluster": 0
+    },
+    {
+        "customer_id": 543,
+        "total_order_value": 40983.45,
+        "basket_size": 7.3,
+        "purchase_frequency": 10,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 544,
+        "total_order_value": 33456.15,
+        "basket_size": 7.272727272727272,
+        "purchase_frequency": 11,
+        "age": 2,
+        "cluster": 0
+    },
+    {
+        "customer_id": 545,
+        "total_order_value": 17720.82,
+        "basket_size": 9.0,
+        "purchase_frequency": 3,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 546,
+        "total_order_value": 19544.83,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 547,
+        "total_order_value": 4812.02,
+        "basket_size": 5.0,
+        "purchase_frequency": 3,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 548,
+        "total_order_value": 28523.79,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 549,
+        "total_order_value": 24706.06,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 38,
+        "cluster": 0
+    },
+    {
+        "customer_id": 550,
+        "total_order_value": 13831.13,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 551,
+        "total_order_value": 38258.74,
+        "basket_size": 9.833333333333334,
+        "purchase_frequency": 6,
+        "age": 71,
+        "cluster": 0
+    },
+    {
+        "customer_id": 552,
+        "total_order_value": 8461.04,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 553,
+        "total_order_value": 20567.99,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 554,
+        "total_order_value": 35574.259999999995,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 9,
+        "age": 29,
+        "cluster": 0
+    },
+    {
+        "customer_id": 555,
+        "total_order_value": 6619.59,
+        "basket_size": 5.8,
+        "purchase_frequency": 5,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 556,
+        "total_order_value": 15129.83,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 50,
+        "cluster": 1
+    },
+    {
+        "customer_id": 557,
+        "total_order_value": 17940.879999999997,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 558,
+        "total_order_value": 37351.42,
+        "basket_size": 8.25,
+        "purchase_frequency": 8,
+        "age": 10,
+        "cluster": 0
+    },
+    {
+        "customer_id": 559,
+        "total_order_value": 22509.99,
+        "basket_size": 8.4,
+        "purchase_frequency": 5,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 560,
+        "total_order_value": 13579.21,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 561,
+        "total_order_value": 23623.39,
+        "basket_size": 8.4,
+        "purchase_frequency": 5,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 562,
+        "total_order_value": 7813.66,
+        "basket_size": 7.0,
+        "purchase_frequency": 2,
+        "age": 65,
+        "cluster": 2
+    },
+    {
+        "customer_id": 563,
+        "total_order_value": 23657.04,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 564,
+        "total_order_value": 30693.95,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 565,
+        "total_order_value": 36149.36,
+        "basket_size": 7.4,
+        "purchase_frequency": 10,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 566,
+        "total_order_value": 22446.56,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 567,
+        "total_order_value": 30466.62,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 568,
+        "total_order_value": 19725.03,
+        "basket_size": 4.5,
+        "purchase_frequency": 6,
+        "age": 98,
+        "cluster": 2
+    },
+    {
+        "customer_id": 569,
+        "total_order_value": 15705.71,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 570,
+        "total_order_value": 36332.17,
+        "basket_size": 7.363636363636363,
+        "purchase_frequency": 11,
+        "age": 62,
+        "cluster": 0
+    },
+    {
+        "customer_id": 571,
+        "total_order_value": 27355.38,
+        "basket_size": 8.0,
+        "purchase_frequency": 7,
+        "age": 11,
+        "cluster": 0
+    },
+    {
+        "customer_id": 572,
+        "total_order_value": 12616.27,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 573,
+        "total_order_value": 27174.47,
+        "basket_size": 6.2,
+        "purchase_frequency": 10,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 574,
+        "total_order_value": 19331.84,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 575,
+        "total_order_value": 30906.96,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 64,
+        "cluster": 0
+    },
+    {
+        "customer_id": 576,
+        "total_order_value": 30993.12,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 8,
+        "cluster": 0
+    },
+    {
+        "customer_id": 577,
+        "total_order_value": 24632.86,
+        "basket_size": 6.090909090909091,
+        "purchase_frequency": 11,
+        "age": 38,
+        "cluster": 0
+    },
+    {
+        "customer_id": 578,
+        "total_order_value": 35322.06,
+        "basket_size": 8.11111111111111,
+        "purchase_frequency": 9,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 579,
+        "total_order_value": 22283.93,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 60,
+        "cluster": 2
+    },
+    {
+        "customer_id": 580,
+        "total_order_value": 17851.77,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 58,
+        "cluster": 2
+    },
+    {
+        "customer_id": 581,
+        "total_order_value": 5487.4400000000005,
+        "basket_size": 7.0,
+        "purchase_frequency": 2,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 582,
+        "total_order_value": 3363.75,
+        "basket_size": 7.5,
+        "purchase_frequency": 2,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 583,
+        "total_order_value": 29808.73,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 26,
+        "cluster": 0
+    },
+    {
+        "customer_id": 584,
+        "total_order_value": 25120.29,
+        "basket_size": 8.0,
+        "purchase_frequency": 7,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 585,
+        "total_order_value": 28714.86,
+        "basket_size": 7.111111111111111,
+        "purchase_frequency": 9,
+        "age": 59,
+        "cluster": 0
+    },
+    {
+        "customer_id": 586,
+        "total_order_value": 27965.6,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 587,
+        "total_order_value": 14145.330000000002,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 6,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 588,
+        "total_order_value": 19034.5,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 589,
+        "total_order_value": 12914.12,
+        "basket_size": 4.8,
+        "purchase_frequency": 5,
+        "age": 43,
+        "cluster": 1
+    },
+    {
+        "customer_id": 590,
+        "total_order_value": 17965.87,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 93,
+        "cluster": 2
+    },
+    {
+        "customer_id": 591,
+        "total_order_value": 18477.11,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 592,
+        "total_order_value": 10578.93,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 46,
+        "cluster": 1
+    },
+    {
+        "customer_id": 593,
+        "total_order_value": 9300.57,
+        "basket_size": 5.166666666666667,
+        "purchase_frequency": 6,
+        "age": 53,
+        "cluster": 2
+    },
+    {
+        "customer_id": 594,
+        "total_order_value": 7370.639999999999,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 595,
+        "total_order_value": 29791.64,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 596,
+        "total_order_value": 27619.18,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 57,
+        "cluster": 0
+    },
+    {
+        "customer_id": 597,
+        "total_order_value": 8820.11,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 3,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 598,
+        "total_order_value": 29720.54,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 599,
+        "total_order_value": 589.69,
+        "basket_size": 1.0,
+        "purchase_frequency": 1,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 600,
+        "total_order_value": 34759.14,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 94,
+        "cluster": 0
+    },
+    {
+        "customer_id": 601,
+        "total_order_value": 32950.78,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 602,
+        "total_order_value": 27730.48,
+        "basket_size": 7.0,
+        "purchase_frequency": 8,
+        "age": 98,
+        "cluster": 0
+    },
+    {
+        "customer_id": 603,
+        "total_order_value": 38056.880000000005,
+        "basket_size": 7.7,
+        "purchase_frequency": 10,
+        "age": 48,
+        "cluster": 0
+    },
+    {
+        "customer_id": 604,
+        "total_order_value": 16103.63,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 605,
+        "total_order_value": 15460.86,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 606,
+        "total_order_value": 23952.49,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 607,
+        "total_order_value": 29166.43,
+        "basket_size": 5.909090909090909,
+        "purchase_frequency": 11,
+        "age": 99,
+        "cluster": 0
+    },
+    {
+        "customer_id": 608,
+        "total_order_value": 13489.93,
+        "basket_size": 6.125,
+        "purchase_frequency": 8,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 609,
+        "total_order_value": 33205.990000000005,
+        "basket_size": 7.833333333333333,
+        "purchase_frequency": 6,
+        "age": 7,
+        "cluster": 0
+    },
+    {
+        "customer_id": 610,
+        "total_order_value": 25081.2,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 62,
+        "cluster": 2
+    },
+    {
+        "customer_id": 611,
+        "total_order_value": 24131.1,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 62,
+        "cluster": 0
+    },
+    {
+        "customer_id": 612,
+        "total_order_value": 17614.8,
+        "basket_size": 5.6,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 613,
+        "total_order_value": 48026.71,
+        "basket_size": 7.4,
+        "purchase_frequency": 10,
+        "age": 13,
+        "cluster": 0
+    },
+    {
+        "customer_id": 614,
+        "total_order_value": 11473.69,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 615,
+        "total_order_value": 22273.99,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 65,
+        "cluster": 2
+    },
+    {
+        "customer_id": 616,
+        "total_order_value": 13536.91,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 617,
+        "total_order_value": 2171.43,
+        "basket_size": 3.0,
+        "purchase_frequency": 1,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 618,
+        "total_order_value": 7387.28,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 32,
+        "cluster": 1
+    },
+    {
+        "customer_id": 619,
+        "total_order_value": 20755.84,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 620,
+        "total_order_value": 37408.26,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 81,
+        "cluster": 0
+    },
+    {
+        "customer_id": 621,
+        "total_order_value": 41160.95,
+        "basket_size": 7.0,
+        "purchase_frequency": 7,
+        "age": 17,
+        "cluster": 0
+    },
+    {
+        "customer_id": 622,
+        "total_order_value": 27104.39,
+        "basket_size": 6.9,
+        "purchase_frequency": 10,
+        "age": 46,
+        "cluster": 0
+    },
+    {
+        "customer_id": 623,
+        "total_order_value": 25000.12,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 56,
+        "cluster": 0
+    },
+    {
+        "customer_id": 624,
+        "total_order_value": 26309.28,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 625,
+        "total_order_value": 23597.14,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 626,
+        "total_order_value": 23775.300000000003,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 4,
+        "cluster": 1
+    },
+    {
+        "customer_id": 627,
+        "total_order_value": 28232.59,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 92,
+        "cluster": 0
+    },
+    {
+        "customer_id": 628,
+        "total_order_value": 11002.59,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 629,
+        "total_order_value": 1074.89,
+        "basket_size": 4.5,
+        "purchase_frequency": 2,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 630,
+        "total_order_value": 26164.13,
+        "basket_size": 5.3,
+        "purchase_frequency": 10,
+        "age": 49,
+        "cluster": 0
+    },
+    {
+        "customer_id": 631,
+        "total_order_value": 6688.719999999999,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 632,
+        "total_order_value": 24474.51,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 9,
+        "age": 91,
+        "cluster": 0
+    },
+    {
+        "customer_id": 633,
+        "total_order_value": 33493.25,
+        "basket_size": 7.444444444444445,
+        "purchase_frequency": 9,
+        "age": 100,
+        "cluster": 0
+    },
+    {
+        "customer_id": 634,
+        "total_order_value": 19882.370000000003,
+        "basket_size": 8.8,
+        "purchase_frequency": 5,
+        "age": 24,
+        "cluster": 1
+    },
+    {
+        "customer_id": 635,
+        "total_order_value": 13181.51,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 636,
+        "total_order_value": 23641.47,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 637,
+        "total_order_value": 15031.41,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 638,
+        "total_order_value": 14498.91,
+        "basket_size": 4.75,
+        "purchase_frequency": 8,
+        "age": 28,
+        "cluster": 1
+    },
+    {
+        "customer_id": 639,
+        "total_order_value": 16485.31,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 6,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 640,
+        "total_order_value": 21807.08,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 641,
+        "total_order_value": 14378.84,
+        "basket_size": 6.428571428571429,
+        "purchase_frequency": 7,
+        "age": 28,
+        "cluster": 1
+    },
+    {
+        "customer_id": 642,
+        "total_order_value": 24021.14,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 32,
+        "cluster": 1
+    },
+    {
+        "customer_id": 643,
+        "total_order_value": 23773.13,
+        "basket_size": 5.75,
+        "purchase_frequency": 8,
+        "age": 35,
+        "cluster": 0
+    },
+    {
+        "customer_id": 644,
+        "total_order_value": 3895.95,
+        "basket_size": 4.25,
+        "purchase_frequency": 4,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 645,
+        "total_order_value": 26706.370000000003,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 646,
+        "total_order_value": 20600.57,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 647,
+        "total_order_value": 36837.09,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 1,
+        "cluster": 0
+    },
+    {
+        "customer_id": 648,
+        "total_order_value": 19710.86,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 649,
+        "total_order_value": 17052.94,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 650,
+        "total_order_value": 19445.33,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 651,
+        "total_order_value": 7059.19,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 652,
+        "total_order_value": 17157.6,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 51,
+        "cluster": 1
+    },
+    {
+        "customer_id": 653,
+        "total_order_value": 14998.97,
+        "basket_size": 5.25,
+        "purchase_frequency": 4,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 654,
+        "total_order_value": 33307.95,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 86,
+        "cluster": 0
+    },
+    {
+        "customer_id": 655,
+        "total_order_value": 36146.84,
+        "basket_size": 8.714285714285714,
+        "purchase_frequency": 7,
+        "age": 38,
+        "cluster": 0
+    },
+    {
+        "customer_id": 656,
+        "total_order_value": 17153.92,
+        "basket_size": 9.0,
+        "purchase_frequency": 4,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 657,
+        "total_order_value": 6933.24,
+        "basket_size": 4.0,
+        "purchase_frequency": 4,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 658,
+        "total_order_value": 32754.46,
+        "basket_size": 6.888888888888889,
+        "purchase_frequency": 9,
+        "age": 80,
+        "cluster": 0
+    },
+    {
+        "customer_id": 659,
+        "total_order_value": 3736.82,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 3,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 660,
+        "total_order_value": 3005.28,
+        "basket_size": 5.5,
+        "purchase_frequency": 2,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 661,
+        "total_order_value": 20058.57,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 24,
+        "cluster": 1
+    },
+    {
+        "customer_id": 662,
+        "total_order_value": 20891.89,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 663,
+        "total_order_value": 16882.5,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 664,
+        "total_order_value": 14269.38,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 665,
+        "total_order_value": 26843.34,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 39,
+        "cluster": 0
+    },
+    {
+        "customer_id": 666,
+        "total_order_value": 25665.69,
+        "basket_size": 6.222222222222222,
+        "purchase_frequency": 9,
+        "age": 12,
+        "cluster": 0
+    },
+    {
+        "customer_id": 667,
+        "total_order_value": 29871.7,
+        "basket_size": 5.75,
+        "purchase_frequency": 8,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 668,
+        "total_order_value": 29881.47,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 66,
+        "cluster": 2
+    },
+    {
+        "customer_id": 669,
+        "total_order_value": 13332.08,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 670,
+        "total_order_value": 18863.22,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 31,
+        "cluster": 1
+    },
+    {
+        "customer_id": 671,
+        "total_order_value": 26317.17,
+        "basket_size": 7.857142857142857,
+        "purchase_frequency": 7,
+        "age": 41,
+        "cluster": 0
+    },
+    {
+        "customer_id": 672,
+        "total_order_value": 16419.72,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 673,
+        "total_order_value": 24269.1,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 674,
+        "total_order_value": 20070.79,
+        "basket_size": 6.5,
+        "purchase_frequency": 8,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 675,
+        "total_order_value": 17148.38,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 676,
+        "total_order_value": 30100.63,
+        "basket_size": 8.0,
+        "purchase_frequency": 7,
+        "age": 29,
+        "cluster": 0
+    },
+    {
+        "customer_id": 677,
+        "total_order_value": 4298.2300000000005,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 50,
+        "cluster": 1
+    },
+    {
+        "customer_id": 678,
+        "total_order_value": 8285.13,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 679,
+        "total_order_value": 11110.17,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 680,
+        "total_order_value": 21245.85,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 681,
+        "total_order_value": 8830.72,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 682,
+        "total_order_value": 25638.7,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 5,
+        "cluster": 1
+    },
+    {
+        "customer_id": 683,
+        "total_order_value": 8420.52,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 684,
+        "total_order_value": 22900.15,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 685,
+        "total_order_value": 19578.32,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 83,
+        "cluster": 2
+    },
+    {
+        "customer_id": 686,
+        "total_order_value": 18636.64,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 41,
+        "cluster": 1
+    },
+    {
+        "customer_id": 687,
+        "total_order_value": 32629.64,
+        "basket_size": 8.142857142857142,
+        "purchase_frequency": 7,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 688,
+        "total_order_value": 9290.75,
+        "basket_size": 5.0,
+        "purchase_frequency": 2,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 689,
+        "total_order_value": 10040.49,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 690,
+        "total_order_value": 41598.17,
+        "basket_size": 7.111111111111111,
+        "purchase_frequency": 9,
+        "age": 4,
+        "cluster": 0
+    },
+    {
+        "customer_id": 691,
+        "total_order_value": 18428.6,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 692,
+        "total_order_value": 21499.06,
+        "basket_size": 5.166666666666667,
+        "purchase_frequency": 6,
+        "age": 10,
+        "cluster": 1
+    },
+    {
+        "customer_id": 693,
+        "total_order_value": 14469.69,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 37,
+        "cluster": 1
+    },
+    {
+        "customer_id": 694,
+        "total_order_value": 14073.79,
+        "basket_size": 4.25,
+        "purchase_frequency": 4,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 695,
+        "total_order_value": 18712.76,
+        "basket_size": 4.181818181818182,
+        "purchase_frequency": 11,
+        "age": 74,
+        "cluster": 0
+    },
+    {
+        "customer_id": 696,
+        "total_order_value": 12996.36,
+        "basket_size": 9.0,
+        "purchase_frequency": 2,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 697,
+        "total_order_value": 37694.32,
+        "basket_size": 6.555555555555555,
+        "purchase_frequency": 9,
+        "age": 33,
+        "cluster": 0
+    },
+    {
+        "customer_id": 698,
+        "total_order_value": 4544.75,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 699,
+        "total_order_value": 7880.139999999999,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 700,
+        "total_order_value": 20834.27,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 701,
+        "total_order_value": 31030.61,
+        "basket_size": 8.222222222222221,
+        "purchase_frequency": 9,
+        "age": 99,
+        "cluster": 0
+    },
+    {
+        "customer_id": 702,
+        "total_order_value": 10576.91,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 93,
+        "cluster": 2
+    },
+    {
+        "customer_id": 703,
+        "total_order_value": 13048.74,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 88,
+        "cluster": 2
+    },
+    {
+        "customer_id": 704,
+        "total_order_value": 30862.42,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 12,
+        "cluster": 0
+    },
+    {
+        "customer_id": 705,
+        "total_order_value": 12786.99,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 706,
+        "total_order_value": 11260.2,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 3,
+        "age": 65,
+        "cluster": 2
+    },
+    {
+        "customer_id": 707,
+        "total_order_value": 16397.46,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 708,
+        "total_order_value": 13102.44,
+        "basket_size": 5.25,
+        "purchase_frequency": 4,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 709,
+        "total_order_value": 17485.940000000002,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 79,
+        "cluster": 2
+    },
+    {
+        "customer_id": 710,
+        "total_order_value": 23773.21,
+        "basket_size": 6.833333333333333,
+        "purchase_frequency": 6,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 711,
+        "total_order_value": 17834.809999999998,
+        "basket_size": 5.166666666666667,
+        "purchase_frequency": 6,
+        "age": 73,
+        "cluster": 2
+    },
+    {
+        "customer_id": 712,
+        "total_order_value": 20534.5,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 713,
+        "total_order_value": 27167.8,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 91,
+        "cluster": 2
+    },
+    {
+        "customer_id": 714,
+        "total_order_value": 19495.17,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 6,
+        "age": 13,
+        "cluster": 1
+    },
+    {
+        "customer_id": 715,
+        "total_order_value": 6919.08,
+        "basket_size": 4.0,
+        "purchase_frequency": 4,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 716,
+        "total_order_value": 12716.48,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 717,
+        "total_order_value": 20151.3,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 13,
+        "cluster": 1
+    },
+    {
+        "customer_id": 718,
+        "total_order_value": 16712.33,
+        "basket_size": 6.142857142857143,
+        "purchase_frequency": 7,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 719,
+        "total_order_value": 17330.620000000003,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 720,
+        "total_order_value": 13296.63,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 721,
+        "total_order_value": 12750.07,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 722,
+        "total_order_value": 2093.22,
+        "basket_size": 5.0,
+        "purchase_frequency": 2,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 723,
+        "total_order_value": 17576.11,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 724,
+        "total_order_value": 8033.49,
+        "basket_size": 5.333333333333333,
+        "purchase_frequency": 3,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 725,
+        "total_order_value": 14236.09,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 726,
+        "total_order_value": 26099.65,
+        "basket_size": 8.0,
+        "purchase_frequency": 6,
+        "age": 14,
+        "cluster": 1
+    },
+    {
+        "customer_id": 727,
+        "total_order_value": 23667.86,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 52,
+        "cluster": 1
+    },
+    {
+        "customer_id": 728,
+        "total_order_value": 37260.4,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 72,
+        "cluster": 0
+    },
+    {
+        "customer_id": 729,
+        "total_order_value": 6357.18,
+        "basket_size": 8.0,
+        "purchase_frequency": 2,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 730,
+        "total_order_value": 13194.71,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 731,
+        "total_order_value": 31375.6,
+        "basket_size": 8.333333333333334,
+        "purchase_frequency": 9,
+        "age": 4,
+        "cluster": 0
+    },
+    {
+        "customer_id": 732,
+        "total_order_value": 38328.66,
+        "basket_size": 6.0,
+        "purchase_frequency": 12,
+        "age": 25,
+        "cluster": 0
+    },
+    {
+        "customer_id": 733,
+        "total_order_value": 24765.79,
+        "basket_size": 7.25,
+        "purchase_frequency": 8,
+        "age": 81,
+        "cluster": 0
+    },
+    {
+        "customer_id": 734,
+        "total_order_value": 37376.62,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 19,
+        "cluster": 0
+    },
+    {
+        "customer_id": 735,
+        "total_order_value": 18050.67,
+        "basket_size": 5.6,
+        "purchase_frequency": 5,
+        "age": 33,
+        "cluster": 1
+    },
+    {
+        "customer_id": 736,
+        "total_order_value": 29640.53,
+        "basket_size": 7.1,
+        "purchase_frequency": 10,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 737,
+        "total_order_value": 18857.54,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 738,
+        "total_order_value": 13010.09,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 739,
+        "total_order_value": 24907.5,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 740,
+        "total_order_value": 23268.21,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 741,
+        "total_order_value": 16090.21,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 52,
+        "cluster": 1
+    },
+    {
+        "customer_id": 742,
+        "total_order_value": 14238.27,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 6,
+        "age": 62,
+        "cluster": 2
+    },
+    {
+        "customer_id": 743,
+        "total_order_value": 27532.61,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 744,
+        "total_order_value": 13320.4,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 27,
+        "cluster": 1
+    },
+    {
+        "customer_id": 745,
+        "total_order_value": 12660.57,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 746,
+        "total_order_value": 14569.96,
+        "basket_size": 5.8,
+        "purchase_frequency": 5,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 747,
+        "total_order_value": 4513.61,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 748,
+        "total_order_value": 26865.73,
+        "basket_size": 8.4,
+        "purchase_frequency": 5,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 749,
+        "total_order_value": 16762.690000000002,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 28,
+        "cluster": 1
+    },
+    {
+        "customer_id": 750,
+        "total_order_value": 3545.45,
+        "basket_size": 5.5,
+        "purchase_frequency": 2,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 751,
+        "total_order_value": 18449.17,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 752,
+        "total_order_value": 12987.31,
+        "basket_size": 6.0,
+        "purchase_frequency": 3,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 753,
+        "total_order_value": 31095.84,
+        "basket_size": 6.375,
+        "purchase_frequency": 8,
+        "age": 32,
+        "cluster": 0
+    },
+    {
+        "customer_id": 754,
+        "total_order_value": 34324.85,
+        "basket_size": 5.7,
+        "purchase_frequency": 10,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 755,
+        "total_order_value": 26322.15,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 54,
+        "cluster": 0
+    },
+    {
+        "customer_id": 756,
+        "total_order_value": 30576.95,
+        "basket_size": 7.0,
+        "purchase_frequency": 9,
+        "age": 66,
+        "cluster": 0
+    },
+    {
+        "customer_id": 757,
+        "total_order_value": 12241.34,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 758,
+        "total_order_value": 15180.55,
+        "basket_size": 4.428571428571429,
+        "purchase_frequency": 7,
+        "age": 84,
+        "cluster": 2
+    },
+    {
+        "customer_id": 759,
+        "total_order_value": 43025.08,
+        "basket_size": 5.785714285714286,
+        "purchase_frequency": 14,
+        "age": 34,
+        "cluster": 0
+    },
+    {
+        "customer_id": 760,
+        "total_order_value": 19405.4,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 54,
+        "cluster": 2
+    },
+    {
+        "customer_id": 761,
+        "total_order_value": 10457.56,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 23,
+        "cluster": 1
+    },
+    {
+        "customer_id": 762,
+        "total_order_value": 4223.25,
+        "basket_size": 5.333333333333333,
+        "purchase_frequency": 3,
+        "age": 61,
+        "cluster": 2
+    },
+    {
+        "customer_id": 763,
+        "total_order_value": 18202.24,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 764,
+        "total_order_value": 7945.25,
+        "basket_size": 8.0,
+        "purchase_frequency": 2,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 765,
+        "total_order_value": 47830.97,
+        "basket_size": 6.727272727272728,
+        "purchase_frequency": 11,
+        "age": 77,
+        "cluster": 0
+    },
+    {
+        "customer_id": 766,
+        "total_order_value": 27899.99,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 767,
+        "total_order_value": 20181.7,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 87,
+        "cluster": 2
+    },
+    {
+        "customer_id": 768,
+        "total_order_value": 16792.96,
+        "basket_size": 6.0,
+        "purchase_frequency": 6,
+        "age": 93,
+        "cluster": 2
+    },
+    {
+        "customer_id": 769,
+        "total_order_value": 8297.1,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 770,
+        "total_order_value": 8838.45,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 771,
+        "total_order_value": 14734.61,
+        "basket_size": 6.25,
+        "purchase_frequency": 4,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 772,
+        "total_order_value": 11015.52,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 773,
+        "total_order_value": 33859.58,
+        "basket_size": 6.0,
+        "purchase_frequency": 7,
+        "age": 50,
+        "cluster": 0
+    },
+    {
+        "customer_id": 774,
+        "total_order_value": 4948.0,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 775,
+        "total_order_value": 9427.49,
+        "basket_size": 4.5,
+        "purchase_frequency": 6,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 776,
+        "total_order_value": 36089.06,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 36,
+        "cluster": 0
+    },
+    {
+        "customer_id": 777,
+        "total_order_value": 28923.53,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 61,
+        "cluster": 0
+    },
+    {
+        "customer_id": 778,
+        "total_order_value": 19113.74,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 3,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 779,
+        "total_order_value": 22877.51,
+        "basket_size": 6.166666666666667,
+        "purchase_frequency": 6,
+        "age": 11,
+        "cluster": 1
+    },
+    {
+        "customer_id": 780,
+        "total_order_value": 13001.35,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 781,
+        "total_order_value": 34699.87,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 782,
+        "total_order_value": 5709.13,
+        "basket_size": 5.25,
+        "purchase_frequency": 4,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 783,
+        "total_order_value": 17181.57,
+        "basket_size": 6.2,
+        "purchase_frequency": 5,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 784,
+        "total_order_value": 14866.48,
+        "basket_size": 5.6,
+        "purchase_frequency": 5,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 785,
+        "total_order_value": 16053.63,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 786,
+        "total_order_value": 21551.1,
+        "basket_size": 5.75,
+        "purchase_frequency": 8,
+        "age": 31,
+        "cluster": 0
+    },
+    {
+        "customer_id": 787,
+        "total_order_value": 41966.62,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 3,
+        "cluster": 0
+    },
+    {
+        "customer_id": 788,
+        "total_order_value": 31334.3,
+        "basket_size": 7.625,
+        "purchase_frequency": 8,
+        "age": 70,
+        "cluster": 0
+    },
+    {
+        "customer_id": 789,
+        "total_order_value": 6822.4,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 790,
+        "total_order_value": 4904.21,
+        "basket_size": 4.5,
+        "purchase_frequency": 4,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 791,
+        "total_order_value": 8872.11,
+        "basket_size": 7.5,
+        "purchase_frequency": 2,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 792,
+        "total_order_value": 16645.49,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 2,
+        "cluster": 1
+    },
+    {
+        "customer_id": 793,
+        "total_order_value": 14386.7,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 794,
+        "total_order_value": 39962.16,
+        "basket_size": 6.5,
+        "purchase_frequency": 10,
+        "age": 62,
+        "cluster": 0
+    },
+    {
+        "customer_id": 795,
+        "total_order_value": 12405.23,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 49,
+        "cluster": 1
+    },
+    {
+        "customer_id": 796,
+        "total_order_value": 24973.48,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 797,
+        "total_order_value": 3846.83,
+        "basket_size": 4.75,
+        "purchase_frequency": 4,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 798,
+        "total_order_value": 12390.62,
+        "basket_size": 5.25,
+        "purchase_frequency": 4,
+        "age": 26,
+        "cluster": 1
+    },
+    {
+        "customer_id": 799,
+        "total_order_value": 15577.09,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 800,
+        "total_order_value": 32629.1,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 43,
+        "cluster": 0
+    },
+    {
+        "customer_id": 801,
+        "total_order_value": 24769.0,
+        "basket_size": 8.285714285714286,
+        "purchase_frequency": 7,
+        "age": 64,
+        "cluster": 0
+    },
+    {
+        "customer_id": 802,
+        "total_order_value": 16648.58,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 803,
+        "total_order_value": 18876.43,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 3,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 804,
+        "total_order_value": 16337.84,
+        "basket_size": 6.714285714285714,
+        "purchase_frequency": 7,
+        "age": 43,
+        "cluster": 1
+    },
+    {
+        "customer_id": 805,
+        "total_order_value": 27819.96,
+        "basket_size": 7.25,
+        "purchase_frequency": 8,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 806,
+        "total_order_value": 33455.46,
+        "basket_size": 7.125,
+        "purchase_frequency": 8,
+        "age": 14,
+        "cluster": 0
+    },
+    {
+        "customer_id": 807,
+        "total_order_value": 5804.83,
+        "basket_size": 6.0,
+        "purchase_frequency": 3,
+        "age": 25,
+        "cluster": 1
+    },
+    {
+        "customer_id": 808,
+        "total_order_value": 11500.61,
+        "basket_size": 7.25,
+        "purchase_frequency": 4,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 809,
+        "total_order_value": 36322.94,
+        "basket_size": 8.285714285714286,
+        "purchase_frequency": 7,
+        "age": 10,
+        "cluster": 0
+    },
+    {
+        "customer_id": 810,
+        "total_order_value": 42198.7,
+        "basket_size": 8.11111111111111,
+        "purchase_frequency": 9,
+        "age": 90,
+        "cluster": 0
+    },
+    {
+        "customer_id": 811,
+        "total_order_value": 18779.89,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 812,
+        "total_order_value": 13505.9,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 3,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 813,
+        "total_order_value": 20283.53,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 31,
+        "cluster": 1
+    },
+    {
+        "customer_id": 814,
+        "total_order_value": 5802.54,
+        "basket_size": 5.0,
+        "purchase_frequency": 4,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 815,
+        "total_order_value": 27764.17,
+        "basket_size": 5.2727272727272725,
+        "purchase_frequency": 11,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 816,
+        "total_order_value": 14438.45,
+        "basket_size": 5.0,
+        "purchase_frequency": 10,
+        "age": 60,
+        "cluster": 0
+    },
+    {
+        "customer_id": 817,
+        "total_order_value": 9510.9,
+        "basket_size": 10.0,
+        "purchase_frequency": 1,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 818,
+        "total_order_value": 35027.39,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 35,
+        "cluster": 0
+    },
+    {
+        "customer_id": 819,
+        "total_order_value": 13333.14,
+        "basket_size": 6.0,
+        "purchase_frequency": 5,
+        "age": 12,
+        "cluster": 1
+    },
+    {
+        "customer_id": 820,
+        "total_order_value": 22093.19,
+        "basket_size": 8.2,
+        "purchase_frequency": 5,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 821,
+        "total_order_value": 22589.78,
+        "basket_size": 5.444444444444445,
+        "purchase_frequency": 9,
+        "age": 45,
+        "cluster": 0
+    },
+    {
+        "customer_id": 822,
+        "total_order_value": 22562.8,
+        "basket_size": 6.1,
+        "purchase_frequency": 10,
+        "age": 42,
+        "cluster": 0
+    },
+    {
+        "customer_id": 823,
+        "total_order_value": 36101.41,
+        "basket_size": 7.375,
+        "purchase_frequency": 8,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 824,
+        "total_order_value": 22645.81,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 23,
+        "cluster": 1
+    },
+    {
+        "customer_id": 825,
+        "total_order_value": 25508.02,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 3,
+        "cluster": 1
+    },
+    {
+        "customer_id": 826,
+        "total_order_value": 25174.15,
+        "basket_size": 8.0,
+        "purchase_frequency": 5,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 827,
+        "total_order_value": 29639.34,
+        "basket_size": 7.444444444444445,
+        "purchase_frequency": 9,
+        "age": 94,
+        "cluster": 0
+    },
+    {
+        "customer_id": 828,
+        "total_order_value": 6632.17,
+        "basket_size": 4.166666666666667,
+        "purchase_frequency": 6,
+        "age": 64,
+        "cluster": 2
+    },
+    {
+        "customer_id": 829,
+        "total_order_value": 18071.55,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 3,
+        "cluster": 1
+    },
+    {
+        "customer_id": 830,
+        "total_order_value": 7522.56,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 831,
+        "total_order_value": 24697.05,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 832,
+        "total_order_value": 16048.25,
+        "basket_size": 8.6,
+        "purchase_frequency": 5,
+        "age": 56,
+        "cluster": 2
+    },
+    {
+        "customer_id": 833,
+        "total_order_value": 23797.87,
+        "basket_size": 6.888888888888889,
+        "purchase_frequency": 9,
+        "age": 67,
+        "cluster": 0
+    },
+    {
+        "customer_id": 834,
+        "total_order_value": 9915.27,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 80,
+        "cluster": 2
+    },
+    {
+        "customer_id": 835,
+        "total_order_value": 36680.68,
+        "basket_size": 6.9,
+        "purchase_frequency": 10,
+        "age": 27,
+        "cluster": 0
+    },
+    {
+        "customer_id": 836,
+        "total_order_value": 17890.78,
+        "basket_size": 8.5,
+        "purchase_frequency": 4,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 837,
+        "total_order_value": 24984.01,
+        "basket_size": 7.0,
+        "purchase_frequency": 8,
+        "age": 9,
+        "cluster": 0
+    },
+    {
+        "customer_id": 838,
+        "total_order_value": 12773.7,
+        "basket_size": 7.5,
+        "purchase_frequency": 2,
+        "age": 16,
+        "cluster": 1
+    },
+    {
+        "customer_id": 839,
+        "total_order_value": 30713.7,
+        "basket_size": 7.272727272727272,
+        "purchase_frequency": 11,
+        "age": 81,
+        "cluster": 0
+    },
+    {
+        "customer_id": 840,
+        "total_order_value": 15376.73,
+        "basket_size": 4.833333333333333,
+        "purchase_frequency": 6,
+        "age": 59,
+        "cluster": 2
+    },
+    {
+        "customer_id": 841,
+        "total_order_value": 24160.79,
+        "basket_size": 5.444444444444445,
+        "purchase_frequency": 9,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 842,
+        "total_order_value": 30655.47,
+        "basket_size": 7.555555555555555,
+        "purchase_frequency": 9,
+        "age": 73,
+        "cluster": 0
+    },
+    {
+        "customer_id": 843,
+        "total_order_value": 27293.09,
+        "basket_size": 7.0,
+        "purchase_frequency": 8,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 844,
+        "total_order_value": 14156.32,
+        "basket_size": 5.5,
+        "purchase_frequency": 6,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 845,
+        "total_order_value": 24280.11,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 71,
+        "cluster": 2
+    },
+    {
+        "customer_id": 846,
+        "total_order_value": 12248.96,
+        "basket_size": 4.75,
+        "purchase_frequency": 4,
+        "age": 34,
+        "cluster": 1
+    },
+    {
+        "customer_id": 847,
+        "total_order_value": 24126.31,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 69,
+        "cluster": 0
+    },
+    {
+        "customer_id": 848,
+        "total_order_value": 28357.67,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 849,
+        "total_order_value": 18152.31,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 850,
+        "total_order_value": 15113.48,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 3,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 851,
+        "total_order_value": 7374.75,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 852,
+        "total_order_value": 26604.74,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 52,
+        "cluster": 0
+    },
+    {
+        "customer_id": 853,
+        "total_order_value": 45034.47,
+        "basket_size": 6.785714285714286,
+        "purchase_frequency": 14,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 854,
+        "total_order_value": 11172.13,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 50,
+        "cluster": 2
+    },
+    {
+        "customer_id": 855,
+        "total_order_value": 17623.99,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 856,
+        "total_order_value": 7931.74,
+        "basket_size": 3.5,
+        "purchase_frequency": 4,
+        "age": 24,
+        "cluster": 1
+    },
+    {
+        "customer_id": 857,
+        "total_order_value": 45910.07,
+        "basket_size": 8.0,
+        "purchase_frequency": 8,
+        "age": 51,
+        "cluster": 0
+    },
+    {
+        "customer_id": 858,
+        "total_order_value": 9592.35,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 3,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 859,
+        "total_order_value": 18804.73,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 860,
+        "total_order_value": 25431.08,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 64,
+        "cluster": 0
+    },
+    {
+        "customer_id": 861,
+        "total_order_value": 15723.13,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 43,
+        "cluster": 1
+    },
+    {
+        "customer_id": 862,
+        "total_order_value": 7832.88,
+        "basket_size": 6.5,
+        "purchase_frequency": 2,
+        "age": 90,
+        "cluster": 2
+    },
+    {
+        "customer_id": 863,
+        "total_order_value": 31586.75,
+        "basket_size": 8.5,
+        "purchase_frequency": 8,
+        "age": 39,
+        "cluster": 0
+    },
+    {
+        "customer_id": 864,
+        "total_order_value": 21412.64,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 865,
+        "total_order_value": 31890.09,
+        "basket_size": 7.8,
+        "purchase_frequency": 5,
+        "age": 44,
+        "cluster": 0
+    },
+    {
+        "customer_id": 866,
+        "total_order_value": 15531.21,
+        "basket_size": 6.857142857142857,
+        "purchase_frequency": 7,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 867,
+        "total_order_value": 18224.81,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 868,
+        "total_order_value": 15098.99,
+        "basket_size": 8.666666666666666,
+        "purchase_frequency": 3,
+        "age": 76,
+        "cluster": 2
+    },
+    {
+        "customer_id": 869,
+        "total_order_value": 15434.91,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 45,
+        "cluster": 1
+    },
+    {
+        "customer_id": 870,
+        "total_order_value": 11207.23,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 871,
+        "total_order_value": 22350.04,
+        "basket_size": 9.2,
+        "purchase_frequency": 5,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 872,
+        "total_order_value": 21103.28,
+        "basket_size": 6.625,
+        "purchase_frequency": 8,
+        "age": 18,
+        "cluster": 1
+    },
+    {
+        "customer_id": 873,
+        "total_order_value": 9897.52,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 874,
+        "total_order_value": 20568.83,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 875,
+        "total_order_value": 22566.4,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 876,
+        "total_order_value": 39357.69,
+        "basket_size": 8.142857142857142,
+        "purchase_frequency": 7,
+        "age": 4,
+        "cluster": 0
+    },
+    {
+        "customer_id": 877,
+        "total_order_value": 18008.170000000002,
+        "basket_size": 6.0,
+        "purchase_frequency": 8,
+        "age": 22,
+        "cluster": 1
+    },
+    {
+        "customer_id": 878,
+        "total_order_value": 21049.29,
+        "basket_size": 6.222222222222222,
+        "purchase_frequency": 9,
+        "age": 19,
+        "cluster": 0
+    },
+    {
+        "customer_id": 879,
+        "total_order_value": 40151.47,
+        "basket_size": 8.285714285714286,
+        "purchase_frequency": 7,
+        "age": 7,
+        "cluster": 0
+    },
+    {
+        "customer_id": 880,
+        "total_order_value": 26001.63,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 26,
+        "cluster": 1
+    },
+    {
+        "customer_id": 881,
+        "total_order_value": 23229.33,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 882,
+        "total_order_value": 28474.75,
+        "basket_size": 5.5,
+        "purchase_frequency": 8,
+        "age": 83,
+        "cluster": 0
+    },
+    {
+        "customer_id": 883,
+        "total_order_value": 10197.23,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 51,
+        "cluster": 2
+    },
+    {
+        "customer_id": 884,
+        "total_order_value": 21458.25,
+        "basket_size": 5.714285714285714,
+        "purchase_frequency": 7,
+        "age": 69,
+        "cluster": 2
+    },
+    {
+        "customer_id": 885,
+        "total_order_value": 16783.17,
+        "basket_size": 4.0,
+        "purchase_frequency": 6,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 886,
+        "total_order_value": 18397.88,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 3,
+        "age": 100,
+        "cluster": 2
+    },
+    {
+        "customer_id": 887,
+        "total_order_value": 17437.260000000002,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 67,
+        "cluster": 2
+    },
+    {
+        "customer_id": 888,
+        "total_order_value": 14886.88,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 889,
+        "total_order_value": 14576.29,
+        "basket_size": 6.8,
+        "purchase_frequency": 5,
+        "age": 7,
+        "cluster": 1
+    },
+    {
+        "customer_id": 890,
+        "total_order_value": 2719.71,
+        "basket_size": 6.5,
+        "purchase_frequency": 2,
+        "age": 44,
+        "cluster": 1
+    },
+    {
+        "customer_id": 891,
+        "total_order_value": 19183.93,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 6,
+        "cluster": 1
+    },
+    {
+        "customer_id": 892,
+        "total_order_value": 6825.139999999999,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 17,
+        "cluster": 1
+    },
+    {
+        "customer_id": 893,
+        "total_order_value": 17805.149999999998,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 89,
+        "cluster": 2
+    },
+    {
+        "customer_id": 894,
+        "total_order_value": 12197.76,
+        "basket_size": 5.833333333333333,
+        "purchase_frequency": 6,
+        "age": 20,
+        "cluster": 1
+    },
+    {
+        "customer_id": 895,
+        "total_order_value": 13527.02,
+        "basket_size": 6.6,
+        "purchase_frequency": 5,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 896,
+        "total_order_value": 12956.75,
+        "basket_size": 5.75,
+        "purchase_frequency": 4,
+        "age": 52,
+        "cluster": 2
+    },
+    {
+        "customer_id": 897,
+        "total_order_value": 23733.98,
+        "basket_size": 5.888888888888889,
+        "purchase_frequency": 9,
+        "age": 5,
+        "cluster": 0
+    },
+    {
+        "customer_id": 898,
+        "total_order_value": 12604.71,
+        "basket_size": 5.25,
+        "purchase_frequency": 8,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 899,
+        "total_order_value": 19684.29,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 93,
+        "cluster": 2
+    },
+    {
+        "customer_id": 900,
+        "total_order_value": 22627.71,
+        "basket_size": 4.5,
+        "purchase_frequency": 8,
+        "age": 39,
+        "cluster": 0
+    },
+    {
+        "customer_id": 901,
+        "total_order_value": 15389.0,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 6,
+        "age": 49,
+        "cluster": 1
+    },
+    {
+        "customer_id": 902,
+        "total_order_value": 24595.67,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 93,
+        "cluster": 2
+    },
+    {
+        "customer_id": 903,
+        "total_order_value": 27652.14,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 95,
+        "cluster": 2
+    },
+    {
+        "customer_id": 904,
+        "total_order_value": 14192.66,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 26,
+        "cluster": 1
+    },
+    {
+        "customer_id": 905,
+        "total_order_value": 23165.91,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 57,
+        "cluster": 2
+    },
+    {
+        "customer_id": 906,
+        "total_order_value": 14580.94,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 75,
+        "cluster": 2
+    },
+    {
+        "customer_id": 907,
+        "total_order_value": 36671.96,
+        "basket_size": 7.8,
+        "purchase_frequency": 10,
+        "age": 27,
+        "cluster": 0
+    },
+    {
+        "customer_id": 908,
+        "total_order_value": 22243.78,
+        "basket_size": 5.875,
+        "purchase_frequency": 8,
+        "age": 23,
+        "cluster": 1
+    },
+    {
+        "customer_id": 909,
+        "total_order_value": 12129.48,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 910,
+        "total_order_value": 5277.38,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 911,
+        "total_order_value": 7188.01,
+        "basket_size": 5.5,
+        "purchase_frequency": 2,
+        "age": 88,
+        "cluster": 2
+    },
+    {
+        "customer_id": 912,
+        "total_order_value": 13633.08,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 19,
+        "cluster": 1
+    },
+    {
+        "customer_id": 913,
+        "total_order_value": 50389.13,
+        "basket_size": 7.615384615384615,
+        "purchase_frequency": 13,
+        "age": 53,
+        "cluster": 0
+    },
+    {
+        "customer_id": 914,
+        "total_order_value": 29769.26,
+        "basket_size": 7.428571428571429,
+        "purchase_frequency": 7,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 915,
+        "total_order_value": 19054.47,
+        "basket_size": 7.2,
+        "purchase_frequency": 5,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 916,
+        "total_order_value": 11112.92,
+        "basket_size": 7.0,
+        "purchase_frequency": 3,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 917,
+        "total_order_value": 17018.17,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 63,
+        "cluster": 2
+    },
+    {
+        "customer_id": 918,
+        "total_order_value": 5882.79,
+        "basket_size": 4.75,
+        "purchase_frequency": 4,
+        "age": 47,
+        "cluster": 2
+    },
+    {
+        "customer_id": 919,
+        "total_order_value": 36893.09,
+        "basket_size": 7.2,
+        "purchase_frequency": 10,
+        "age": 36,
+        "cluster": 0
+    },
+    {
+        "customer_id": 920,
+        "total_order_value": 30920.9,
+        "basket_size": 6.909090909090909,
+        "purchase_frequency": 11,
+        "age": 20,
+        "cluster": 0
+    },
+    {
+        "customer_id": 921,
+        "total_order_value": 14126.57,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 922,
+        "total_order_value": 23976.89,
+        "basket_size": 6.5,
+        "purchase_frequency": 6,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 923,
+        "total_order_value": 26125.5,
+        "basket_size": 8.4,
+        "purchase_frequency": 5,
+        "age": 1,
+        "cluster": 1
+    },
+    {
+        "customer_id": 924,
+        "total_order_value": 11253.69,
+        "basket_size": 6.4,
+        "purchase_frequency": 5,
+        "age": 3,
+        "cluster": 1
+    },
+    {
+        "customer_id": 925,
+        "total_order_value": 20289.06,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 78,
+        "cluster": 2
+    },
+    {
+        "customer_id": 926,
+        "total_order_value": 47806.87,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 12,
+        "cluster": 0
+    },
+    {
+        "customer_id": 927,
+        "total_order_value": 15288.37,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 47,
+        "cluster": 1
+    },
+    {
+        "customer_id": 928,
+        "total_order_value": 5168.54,
+        "basket_size": 5.25,
+        "purchase_frequency": 4,
+        "age": 88,
+        "cluster": 2
+    },
+    {
+        "customer_id": 929,
+        "total_order_value": 44294.66,
+        "basket_size": 6.066666666666666,
+        "purchase_frequency": 15,
+        "age": 3,
+        "cluster": 0
+    },
+    {
+        "customer_id": 930,
+        "total_order_value": 22635.41,
+        "basket_size": 6.125,
+        "purchase_frequency": 8,
+        "age": 24,
+        "cluster": 0
+    },
+    {
+        "customer_id": 931,
+        "total_order_value": 11552.44,
+        "basket_size": 5.6,
+        "purchase_frequency": 5,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 932,
+        "total_order_value": 12373.07,
+        "basket_size": 7.4,
+        "purchase_frequency": 5,
+        "age": 81,
+        "cluster": 2
+    },
+    {
+        "customer_id": 933,
+        "total_order_value": 36449.03,
+        "basket_size": 8.11111111111111,
+        "purchase_frequency": 9,
+        "age": 1,
+        "cluster": 0
+    },
+    {
+        "customer_id": 934,
+        "total_order_value": 40502.9,
+        "basket_size": 6.7,
+        "purchase_frequency": 10,
+        "age": 16,
+        "cluster": 0
+    },
+    {
+        "customer_id": 935,
+        "total_order_value": 25932.08,
+        "basket_size": 8.75,
+        "purchase_frequency": 4,
+        "age": 40,
+        "cluster": 1
+    },
+    {
+        "customer_id": 936,
+        "total_order_value": 12784.55,
+        "basket_size": 4.333333333333333,
+        "purchase_frequency": 6,
+        "age": 42,
+        "cluster": 1
+    },
+    {
+        "customer_id": 937,
+        "total_order_value": 23379.45,
+        "basket_size": 8.0,
+        "purchase_frequency": 4,
+        "age": 51,
+        "cluster": 1
+    },
+    {
+        "customer_id": 938,
+        "total_order_value": 14711.99,
+        "basket_size": 7.833333333333333,
+        "purchase_frequency": 6,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 939,
+        "total_order_value": 9168.67,
+        "basket_size": 4.25,
+        "purchase_frequency": 4,
+        "age": 15,
+        "cluster": 1
+    },
+    {
+        "customer_id": 940,
+        "total_order_value": 22137.78,
+        "basket_size": 7.6,
+        "purchase_frequency": 5,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 941,
+        "total_order_value": 13517.01,
+        "basket_size": 9.0,
+        "purchase_frequency": 4,
+        "age": 97,
+        "cluster": 2
+    },
+    {
+        "customer_id": 942,
+        "total_order_value": 29607.45,
+        "basket_size": 6.8,
+        "purchase_frequency": 10,
+        "age": 11,
+        "cluster": 0
+    },
+    {
+        "customer_id": 943,
+        "total_order_value": 14389.73,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 6,
+        "age": 72,
+        "cluster": 2
+    },
+    {
+        "customer_id": 944,
+        "total_order_value": 26228.430000000004,
+        "basket_size": 8.166666666666666,
+        "purchase_frequency": 6,
+        "age": 75,
+        "cluster": 0
+    },
+    {
+        "customer_id": 945,
+        "total_order_value": 15692.63,
+        "basket_size": 5.166666666666667,
+        "purchase_frequency": 6,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 946,
+        "total_order_value": 19646.95,
+        "basket_size": 6.285714285714286,
+        "purchase_frequency": 7,
+        "age": 70,
+        "cluster": 2
+    },
+    {
+        "customer_id": 947,
+        "total_order_value": 16745.77,
+        "basket_size": 6.857142857142857,
+        "purchase_frequency": 7,
+        "age": 55,
+        "cluster": 2
+    },
+    {
+        "customer_id": 948,
+        "total_order_value": 6552.530000000001,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 3,
+        "age": 30,
+        "cluster": 1
+    },
+    {
+        "customer_id": 949,
+        "total_order_value": 15910.3,
+        "basket_size": 7.0,
+        "purchase_frequency": 4,
+        "age": 5,
+        "cluster": 1
+    },
+    {
+        "customer_id": 950,
+        "total_order_value": 25858.37,
+        "basket_size": 7.5,
+        "purchase_frequency": 6,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 951,
+        "total_order_value": 22843.52,
+        "basket_size": 6.0,
+        "purchase_frequency": 8,
+        "age": 68,
+        "cluster": 0
+    },
+    {
+        "customer_id": 952,
+        "total_order_value": 11871.53,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 3,
+        "age": 82,
+        "cluster": 2
+    },
+    {
+        "customer_id": 953,
+        "total_order_value": 5721.05,
+        "basket_size": 4.75,
+        "purchase_frequency": 4,
+        "age": 94,
+        "cluster": 2
+    },
+    {
+        "customer_id": 954,
+        "total_order_value": 10074.84,
+        "basket_size": 6.0,
+        "purchase_frequency": 3,
+        "age": 96,
+        "cluster": 2
+    },
+    {
+        "customer_id": 955,
+        "total_order_value": 18915.76,
+        "basket_size": 5.666666666666667,
+        "purchase_frequency": 6,
+        "age": 33,
+        "cluster": 1
+    },
+    {
+        "customer_id": 956,
+        "total_order_value": 35024.8,
+        "basket_size": 7.181818181818182,
+        "purchase_frequency": 11,
+        "age": 50,
+        "cluster": 0
+    },
+    {
+        "customer_id": 957,
+        "total_order_value": 14446.15,
+        "basket_size": 6.5,
+        "purchase_frequency": 4,
+        "age": 39,
+        "cluster": 1
+    },
+    {
+        "customer_id": 958,
+        "total_order_value": 11237.78,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 68,
+        "cluster": 2
+    },
+    {
+        "customer_id": 959,
+        "total_order_value": 41175.19,
+        "basket_size": 7.166666666666667,
+        "purchase_frequency": 12,
+        "age": 68,
+        "cluster": 0
+    },
+    {
+        "customer_id": 960,
+        "total_order_value": 21981.79,
+        "basket_size": 5.571428571428571,
+        "purchase_frequency": 7,
+        "age": 99,
+        "cluster": 2
+    },
+    {
+        "customer_id": 961,
+        "total_order_value": 29569.85,
+        "basket_size": 6.3,
+        "purchase_frequency": 10,
+        "age": 99,
+        "cluster": 0
+    },
+    {
+        "customer_id": 962,
+        "total_order_value": 37905.61,
+        "basket_size": 7.444444444444445,
+        "purchase_frequency": 9,
+        "age": 44,
+        "cluster": 0
+    },
+    {
+        "customer_id": 963,
+        "total_order_value": 38139.66,
+        "basket_size": 6.222222222222222,
+        "purchase_frequency": 9,
+        "age": 34,
+        "cluster": 0
+    },
+    {
+        "customer_id": 964,
+        "total_order_value": 25356.05,
+        "basket_size": 8.571428571428571,
+        "purchase_frequency": 7,
+        "age": 89,
+        "cluster": 0
+    },
+    {
+        "customer_id": 965,
+        "total_order_value": 5704.15,
+        "basket_size": 6.0,
+        "purchase_frequency": 4,
+        "age": 40,
+        "cluster": 1
+    },
+    {
+        "customer_id": 966,
+        "total_order_value": 42099.31,
+        "basket_size": 6.25,
+        "purchase_frequency": 12,
+        "age": 76,
+        "cluster": 0
+    },
+    {
+        "customer_id": 967,
+        "total_order_value": 40397.600000000006,
+        "basket_size": 8.25,
+        "purchase_frequency": 8,
+        "age": 82,
+        "cluster": 0
+    },
+    {
+        "customer_id": 968,
+        "total_order_value": 2965.62,
+        "basket_size": 4.75,
+        "purchase_frequency": 4,
+        "age": 29,
+        "cluster": 1
+    },
+    {
+        "customer_id": 969,
+        "total_order_value": 27942.1,
+        "basket_size": 6.875,
+        "purchase_frequency": 8,
+        "age": 73,
+        "cluster": 0
+    },
+    {
+        "customer_id": 970,
+        "total_order_value": 19466.35,
+        "basket_size": 7.0,
+        "purchase_frequency": 6,
+        "age": 77,
+        "cluster": 2
+    },
+    {
+        "customer_id": 971,
+        "total_order_value": 19113.28,
+        "basket_size": 7.0,
+        "purchase_frequency": 5,
+        "age": 38,
+        "cluster": 1
+    },
+    {
+        "customer_id": 972,
+        "total_order_value": 49851.09,
+        "basket_size": 8.9,
+        "purchase_frequency": 10,
+        "age": 86,
+        "cluster": 0
+    },
+    {
+        "customer_id": 973,
+        "total_order_value": 27976.39,
+        "basket_size": 7.714285714285714,
+        "purchase_frequency": 7,
+        "age": 65,
+        "cluster": 0
+    },
+    {
+        "customer_id": 974,
+        "total_order_value": 15647.16,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 48,
+        "cluster": 1
+    },
+    {
+        "customer_id": 975,
+        "total_order_value": 11570.73,
+        "basket_size": 5.4,
+        "purchase_frequency": 5,
+        "age": 9,
+        "cluster": 1
+    },
+    {
+        "customer_id": 976,
+        "total_order_value": 9542.46,
+        "basket_size": 4.666666666666667,
+        "purchase_frequency": 3,
+        "age": 5,
+        "cluster": 1
+    },
+    {
+        "customer_id": 977,
+        "total_order_value": 35544.64,
+        "basket_size": 7.666666666666667,
+        "purchase_frequency": 6,
+        "age": 48,
+        "cluster": 0
+    },
+    {
+        "customer_id": 978,
+        "total_order_value": 47420.74,
+        "basket_size": 6.583333333333333,
+        "purchase_frequency": 12,
+        "age": 37,
+        "cluster": 0
+    },
+    {
+        "customer_id": 979,
+        "total_order_value": 28263.44,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 27,
+        "cluster": 0
+    },
+    {
+        "customer_id": 980,
+        "total_order_value": 29216.73,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 6,
+        "age": 37,
+        "cluster": 0
+    },
+    {
+        "customer_id": 981,
+        "total_order_value": 9213.48,
+        "basket_size": 7.75,
+        "purchase_frequency": 4,
+        "age": 36,
+        "cluster": 1
+    },
+    {
+        "customer_id": 982,
+        "total_order_value": 17713.98,
+        "basket_size": 8.0,
+        "purchase_frequency": 3,
+        "age": 83,
+        "cluster": 2
+    },
+    {
+        "customer_id": 983,
+        "total_order_value": 38921.69,
+        "basket_size": 6.333333333333333,
+        "purchase_frequency": 9,
+        "age": 7,
+        "cluster": 0
+    },
+    {
+        "customer_id": 984,
+        "total_order_value": 21062.5,
+        "basket_size": 6.666666666666667,
+        "purchase_frequency": 9,
+        "age": 58,
+        "cluster": 0
+    },
+    {
+        "customer_id": 985,
+        "total_order_value": 25303.9,
+        "basket_size": 6.75,
+        "purchase_frequency": 8,
+        "age": 3,
+        "cluster": 1
+    },
+    {
+        "customer_id": 986,
+        "total_order_value": 32265.23,
+        "basket_size": 7.5,
+        "purchase_frequency": 8,
+        "age": 3,
+        "cluster": 0
+    },
+    {
+        "customer_id": 987,
+        "total_order_value": 15918.87,
+        "basket_size": 8.25,
+        "purchase_frequency": 4,
+        "age": 28,
+        "cluster": 1
+    },
+    {
+        "customer_id": 988,
+        "total_order_value": 17040.809999999998,
+        "basket_size": 5.2,
+        "purchase_frequency": 5,
+        "age": 49,
+        "cluster": 2
+    },
+    {
+        "customer_id": 989,
+        "total_order_value": 29992.75,
+        "basket_size": 7.142857142857143,
+        "purchase_frequency": 7,
+        "age": 84,
+        "cluster": 0
+    },
+    {
+        "customer_id": 990,
+        "total_order_value": 19574.7,
+        "basket_size": 6.444444444444445,
+        "purchase_frequency": 9,
+        "age": 61,
+        "cluster": 0
+    },
+    {
+        "customer_id": 991,
+        "total_order_value": 34833.32,
+        "basket_size": 7.875,
+        "purchase_frequency": 8,
+        "age": 56,
+        "cluster": 0
+    },
+    {
+        "customer_id": 992,
+        "total_order_value": 34914.39,
+        "basket_size": 6.571428571428571,
+        "purchase_frequency": 7,
+        "age": 86,
+        "cluster": 0
+    },
+    {
+        "customer_id": 993,
+        "total_order_value": 29808.9,
+        "basket_size": 7.285714285714286,
+        "purchase_frequency": 7,
+        "age": 36,
+        "cluster": 0
+    },
+    {
+        "customer_id": 994,
+        "total_order_value": 51895.26,
+        "basket_size": 7.0,
+        "purchase_frequency": 11,
+        "age": 81,
+        "cluster": 0
+    },
+    {
+        "customer_id": 995,
+        "total_order_value": 15977.45,
+        "basket_size": 6.75,
+        "purchase_frequency": 4,
+        "age": 21,
+        "cluster": 1
+    },
+    {
+        "customer_id": 996,
+        "total_order_value": 29530.88,
+        "basket_size": 6.777777777777778,
+        "purchase_frequency": 9,
+        "age": 63,
+        "cluster": 0
+    },
+    {
+        "customer_id": 997,
+        "total_order_value": 19804.9,
+        "basket_size": 7.5,
+        "purchase_frequency": 4,
+        "age": 86,
+        "cluster": 2
+    },
+    {
+        "customer_id": 998,
+        "total_order_value": 24055.03,
+        "basket_size": 5.75,
+        "purchase_frequency": 8,
+        "age": 62,
+        "cluster": 0
+    },
+    {
+        "customer_id": 999,
+        "total_order_value": 29824.06,
+        "basket_size": 7.333333333333333,
+        "purchase_frequency": 9,
+        "age": 72,
+        "cluster": 0
+    },
+    {
+        "customer_id": 1000,
+        "total_order_value": 22258.26,
+        "basket_size": 6.125,
+        "purchase_frequency": 8,
+        "age": 45,
+        "cluster": 0
+    }
+]
