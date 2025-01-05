@@ -39,6 +39,20 @@ if __name__ == "__main__":
         last_order_date=("order_date", "max")
     ).reset_index()
 
+    # Son 6 Ay İçindeki Sipariş Sayısı Ekleme
+    purchase_summary["orders_last_6_months"] = purchase_summary["last_order_date"].apply(
+        lambda x: (pd.Timestamp.now() - x).days <= 6 * 30  # 6 ayı gün cinsinden hesapla (yaklaşık 180 gün)
+    )
+    purchase_summary["orders_last_6_months"] = purchase_summary["orders_last_6_months"].astype(int)
+
+    purchase_summary = pd.get_dummies(purchase_summary, columns=["favorite_category"], drop_first=True)
+    purchase_summary["days_since_last_order"] = (pd.Timestamp.now() - purchase_summary["last_order_date"]).dt.days
+
+    # Son 6 Aydaki Harcamalar
+    recent_purchase_data = purchase_data[purchase_data["order_date"] > pd.Timestamp.now() - pd.DateOffset(months=6)]
+    recent_monetary_value = recent_purchase_data.groupby("customer_id")["total_order_value"].sum().reset_index()
+    recent_monetary_value = recent_monetary_value.rename(columns={"total_order_value": "recent_monetary_value"})
+
     # Harcama Varyansı Hesaplama
     purchase_data["avg_order_value"] = purchase_data.groupby("customer_id")["total_order_value"].transform("mean")
     purchase_data["spending_variance"] = (purchase_data["total_order_value"] - purchase_data["avg_order_value"])**2
@@ -56,15 +70,16 @@ if __name__ == "__main__":
 
     # 6. Verilerin Birleştirilmesi
     merged_data = pd.merge(customer_data, purchase_summary, on="customer_id", how="left")
+    merged_data = pd.merge(merged_data, target_purchase_summary, on="customer_id", how="left")
     merged_data = pd.merge(merged_data, category_spending_ratio, on="customer_id", how="left")
     merged_data["total_orders"] = merged_data["total_orders"].fillna(0)
     merged_data["avg_order_value"] = merged_data["avg_order_value"].fillna(0)
     merged_data["registered_days"] = (pd.Timestamp.now() - merged_data["registered_date"]).dt.days
     merged_data["cluster"] = customer_cluster_segment_data["cluster"]
+    merged_data["target_purchased"] = merged_data["target_purchased"].fillna(0)
     merged_data["order_frequency"] = merged_data["total_orders"] / merged_data["registered_days"]
     merged_data["order_frequency"] = merged_data["order_frequency"].fillna(0)
     merged_data = pd.merge(merged_data, spending_variance, on="customer_id", how="left")
-    merged_data["target_purchased"] = merged_data["target_purchased"].fillna(0)
 
     # 7. Özellik Seçimi
     features = merged_data[[ 
