@@ -1,250 +1,319 @@
-from imblearn.over_sampling import SMOTE
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix
+import os
 import joblib
-import pandas as pd
 import numpy as np
+import pandas as pd
+import json
+from sklearn.cluster import KMeans
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import pickle
 
-# Veri Yükleme Fonksiyonu
-def load_data():
-    customer_data = pd.read_json("data/customers.json")
-    purchase_data = pd.read_json("data/purchase.json")
-    customer_cluster_segment_data = pd.read_json("data/segments/customer_cluster_segment.json")
-    return customer_data, purchase_data, customer_cluster_segment_data
+from scripts.train_models.k_means_train_model import create_customer_summary, load_data, preprocess_data, scale_features
 
-# Veri Ön İşleme Fonksiyonu
-def preprocess_data(purchase_data, customer_data):
-    # Satın alma verilerini temizleme
-    purchase_data["total_order_value"] = purchase_data["total_order_value"].replace({"\$": "", ",": ""}, regex=True)
-    purchase_data["product_price"] = purchase_data["product_price"].replace({"\$": "", ",": ""}, regex=True)
-    purchase_data["total_order_value"] = pd.to_numeric(purchase_data["total_order_value"], errors="coerce")
-    purchase_data["product_price"] = pd.to_numeric(purchase_data["product_price"], errors="coerce")
-    purchase_data["order_date"] = pd.to_datetime(purchase_data["order_date"], format="%m/%d/%Y")
-    customer_data["registered_date"] = pd.to_datetime(customer_data["registered_date"], format="%m/%d/%Y")
 
-# Hedef Kategoriyi Oluşturma
-def create_target_category(purchase_data, target_category="Jewelry"):
-    purchase_data["target_category_purchased"] = (purchase_data["product_category"] == target_category).astype(int)
+class CustomerSegmentationCLI:
+    def __init__(self):
+        self.customers_data = None
+        self.purchase_data = None
+        self.customer_cluster_segments_data = None
+        self.k_means_model = None
+        self.random_forest_model = None
 
-# Müşteri Geçmişi ve Özellikler
-def create_customer_features(purchase_data, customer_data, customer_cluster_segment_data):
-    # Müşteri bazında hedef değişken
-    target_purchase_summary = purchase_data.groupby("customer_id").agg(
-        target_purchased=("target_category_purchased", "max")
-    ).reset_index()
+    def main_menu(self):
+        while True:
+            print("\n--- Ana Menü ---")
+            print("Info: Hazır olarak modelimiz ve verimiz bulunmaktadır.")
+            print("1. Model Yükle")
+            print("2. Veri Yükle (JSON)")
+            print("3. Model Eğit")
+            print("4. Müşteri Gruplandır (Segmentasyon)")
+            print("5. Satın Alma Tahmini Yap")
+            print("6. Kategori Önerisi Yap")
+            print("7. Kategori Analizi Yap")
+            print("8. Çıkış")
+            choice = input("Seçiminizi yapın: ")
 
-    # Müşteri geçmişi
-    purchase_summary = purchase_data.groupby("customer_id").agg(
-        total_orders=("order_id", "count"),
-        avg_order_value=("total_order_value", "mean"),
-        favorite_category=("product_category", lambda x: x.mode().iloc[0] if not x.mode().empty else "Unknown"),
-        last_order_date=("order_date", "max")
-    ).reset_index()
+            if choice == "1":
+                self.load_models()
+            elif choice == "2":
+                self.load_data()
+            elif choice == "3":
+                self.train_model()
+            elif choice == "4":
+                self.segment_customers()
+            elif choice == "5":
+                self.predict_purchase()
+            elif choice == "6":
+                self.recommend_category()
+            elif choice == "7":
+                self.analyze_category()
+            elif choice == "8":
+                print("Çıkılıyor...")
+                break
+            else:
+                print("Geçersiz seçim!")
 
-    # Son 6 ay sipariş sayısı
-    purchase_summary["orders_last_6_months"] = purchase_summary["last_order_date"].apply(
-        lambda x: (pd.Timestamp.now() - x).days <= 6 * 30  # 6 ayı gün cinsinden hesapla (yaklaşık 180 gün)
-    )
-    purchase_summary["orders_last_6_months"] = purchase_summary["orders_last_6_months"].astype(int)
+    def load_models(self):
+        print("\nModel Yükleme")
+        print("Müşteri segmentasyonu için **K-Means** ve satın alma tahmini için **Random Forest** modellerine ihtiyacınız var.")
+        print("Lütfen iki modelin dosya yollarını belirtin.\n")
 
-    # One-hot encoding işlemi
-    purchase_summary = pd.get_dummies(purchase_summary, columns=["favorite_category"], drop_first=True)
-    purchase_summary["days_since_last_order"] = (pd.Timestamp.now() - purchase_summary["last_order_date"]).dt.days
+            # Yüklenen modelleri kayıt etmek için bir klasör oluştur
+        saved_models_dir = "input_loaded_models"
+        os.makedirs(saved_models_dir, exist_ok=True)
 
-    # Son 6 Aydaki Harcamalar
-    recent_purchase_data = purchase_data[purchase_data["order_date"] > pd.Timestamp.now() - pd.DateOffset(months=6)]
-    recent_monetary_value = recent_purchase_data.groupby("customer_id")["total_order_value"].sum().reset_index()
-    recent_monetary_value = recent_monetary_value.rename(columns={"total_order_value": "recent_monetary_value"})
+        # K-Means modelini yükle
+        kmeans_path = input("K-Means model dosyasının yolunu girin (örnek: k_means_model.pkl): ")
+        try:
+            with open(kmeans_path, "rb") as file:
+                self.k_means_model = joblib.load(kmeans_path)
+                print("K-Means modeli başarıyla yüklendi.")
+                
+                            # Modeli kayıt et
+                kmeans_save_path = os.path.join(saved_models_dir, "k_means_model.pkl")
+                joblib.dump(self.k_means_model, kmeans_save_path)
+                print(f"K-Means modeli {kmeans_save_path} konumuna kaydedildi.")
+        except FileNotFoundError:
+            print("K-Means model dosyası bulunamadı. Lütfen geçerli bir yol girin.")
+            self.k_means_model = None
 
-    # Harcama varyansı hesaplama
-    purchase_data["avg_order_value"] = purchase_data.groupby("customer_id")["total_order_value"].transform("mean")
-    purchase_data["spending_variance"] = (purchase_data["total_order_value"] - purchase_data["avg_order_value"])**2
-    spending_variance = purchase_data.groupby("customer_id")["spending_variance"].mean().reset_index()
-    spending_variance = spending_variance.rename(columns={"spending_variance": "spending_variance"})
+        # Random Forest modelini yükle
+        rf_path = input("Random Forest model dosyasının yolunu girin (örnek: random_forest_model.pkl): ")
+        try:
+            with open(rf_path, "rb") as file:
+                self.random_forest_model = joblib.load(file)
+                print("Random Forest modeli başarıyla yüklendi.")
+                
+                                # Modeli kayıt et
+                rf_save_path = os.path.join(saved_models_dir, "random_forest_model.pkl")
+                joblib.dump(self.random_forest_model, rf_save_path)
+                print(f"Random Forest modeli {rf_save_path} konumuna kaydedildi.")
+        except FileNotFoundError:
+            print("Random Forest model dosyası bulunamadı. Lütfen geçerli bir yol girin.")
+            self.random_forest_model = None
 
-    # Kategori bazında harcama oranı
-    purchase_data['category_spending'] = purchase_data.groupby('product_category')['total_order_value'].transform('sum')
-    purchase_data['total_spending'] = purchase_data.groupby('customer_id')['total_order_value'].transform('sum')
-    purchase_data['category_spending_ratio'] = purchase_data['category_spending'] / purchase_data['total_spending'] * 100
-
-    category_spending_ratio = purchase_data.groupby("customer_id")["category_spending_ratio"].max().reset_index()
-    category_spending_ratio = category_spending_ratio.rename(columns={"category_spending_ratio": "category_spending_ratio"})
-
-    # Veri birleştirme
-    merged_data = pd.merge(customer_data, purchase_summary, on="customer_id", how="left")
-    merged_data = pd.merge(merged_data, target_purchase_summary, on="customer_id", how="left")
-    merged_data = pd.merge(merged_data, category_spending_ratio, on="customer_id", how="left")
-    merged_data["total_orders"] = merged_data["total_orders"].fillna(0)
-    merged_data["avg_order_value"] = merged_data["avg_order_value"].fillna(0)
-    merged_data["registered_days"] = (pd.Timestamp.now() - merged_data["registered_date"]).dt.days
-    merged_data["cluster"] = customer_cluster_segment_data["cluster"]
-    merged_data["target_purchased"] = merged_data["target_purchased"].fillna(0)
-    merged_data["order_frequency"] = merged_data["total_orders"] / merged_data["registered_days"]
-    merged_data["order_frequency"] = merged_data["order_frequency"].fillna(0)
-    merged_data = pd.merge(merged_data, spending_variance, on="customer_id", how="left")
-
-    return merged_data
-
-# Özellik Seçimi
-def select_features(merged_data):
-    features = merged_data[[ 
-        "age", 
-        "total_orders", 
-        "avg_order_value", 
-        "registered_days", 
-        "cluster",
-        "order_frequency", 
-        "spending_variance",  
-        "category_spending_ratio",  
-    ] + [col for col in merged_data.columns if col.startswith("favorite_category_")]]
-    
-    target = merged_data["target_purchased"]
-    return features, target
-
-# Modeli Eğitme ve Değerlendirme
-def train_and_evaluate_model(X_train, X_test, y_train, y_test):
-    # SMOTE Uygulama
-    smote = SMOTE(random_state=42)
-    X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
-    print(f"Orijinal veri seti boyutları: {X_train.shape}, {y_train.value_counts().to_dict()}")
-    print(f"SMOTE sonrası veri seti boyutları: {X_train_resampled.shape}, {np.bincount(y_train_resampled)}")
-
-    # Model Eğitimi
-    model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=42, min_samples_leaf=4, max_features="log2",
-                                   min_samples_split=7, class_weight={0: 45, 1: 55})
-    model.fit(X_train_resampled, y_train_resampled)
-
-    # Model Performansı
-    y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)   
-    roc_auc = roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])
-    print(f"Doğruluk (Accuracy): {accuracy:.2f}")
-    print(f"ROC-AUC: {roc_auc:.2f}")
-
-    conf_matrix = confusion_matrix(y_test, y_pred)
-    print("Confusion Matrix:")
-    print(conf_matrix)
-
-    return model
-
-#profile göre kategori öneri yorumu
-def recommend_categories(merged_data, customer_id):
-    # favorite_category_* sütunlarını kontrol et
-    category_columns = [col for col in merged_data.columns if col.startswith("favorite_category_")]
-    if not category_columns:
-        print("favorite_category_* sütunları bulunamadı.")
-        return []
-
-    # Müşteri verisini al
-    customer_row = merged_data[merged_data["customer_id"] == customer_id]
-    if customer_row.empty:
-        print("Müşteri bulunamadı.")
-        return []
-
-    # Müşterinin bulunduğu cluster
-    customer_cluster = customer_row["cluster"].values[0]
-
-    # Cluster'daki popüler kategoriler
-    cluster_data = merged_data[merged_data["cluster"] == customer_cluster]
-    favorite_categories = cluster_data[category_columns].sum().sort_values(ascending=False).head(3).index.tolist()
-
-    # Kullanıcının geçmişte satın aldığı kategorilere göre öneriler
-    past_categories = customer_row[category_columns]
-    past_categories = past_categories.T
-    past_categories.columns = ["count"]
-    past_categories = past_categories[past_categories["count"] > 0].index.tolist()
-
-    # Önerilen kategoriler
-    recommendations = [cat.replace("favorite_category_", "") for cat in favorite_categories if cat not in past_categories]
-    
-    return recommendations
-
-def predict_category_probabilities(model, features, merged_data, customer_id, categories):
-    customer_row = merged_data[merged_data["customer_id"] == customer_id]
-    if customer_row.empty:
-        print(f"Müşteri ID {customer_id} bulunamadı.")
-        return None
-    
-    # Müşteri özelliklerini seç
-    customer_features = features[merged_data["customer_id"] == customer_id]
-    if customer_features.empty:
-        print("Müşteri özellikleri bulunamadı.")
-        return None
-
-    # Kategoriler için olasılıkları hesapla
-    category_probabilities = {}
-    probabilities = model.predict_proba(customer_features)  # Tahmin edilen olasılıkları al
-
-    # Olasılık matrisinin boyutunu kontrol et
-    print(f"Olasılık matrisinin boyutu: {probabilities.shape}")
-
-    for category in categories:
-        category_index = categories.index(category)  # Kategoriyi modelle eşleştirmek için gerekli işlem
-        if category_index < probabilities.shape[1]:  # Kategori indeksinin geçerli olduğundan emin olun
-            category_probability = probabilities[0][category_index]
-            category_probabilities[category] = category_probability
+        # Kontrol: Modeller başarıyla yüklendi mi?
+        if self.k_means_model is not None and self.random_forest_model is not None:
+            print("\nTüm modeller başarıyla yüklendi!")
         else:
-            print(f"Kategori {category} için indeks hatası!")
+            print("\nModellerin tamamı yüklenemedi. Eksik modellerle işlem yapamazsınız.")
 
-    return category_probabilities
-
-
-def calculate_total_probability(category_probabilities):
-    # Kategorilerden birini satın alma olasılığı (örneğin: birden fazla kategori arasında birini alma)
-    total_probability = sum(category_probabilities.values())
-    # Burada, her kategori için olasılıkları topluyoruz. Bunu daha karmaşık bir modele göre düzenleyebilirsiniz.
-    return total_probability
-
-# Ana Fonksiyonu Güncelleme
-# Ana Fonksiyonu Güncelleme
-def main():
-    print("Model eğitimi ve öneri sistemi için hazırız!")
-    
-    # Veri Yükleme
-    customer_data, purchase_data, customer_cluster_segment_data = load_data()
-    
-    # Veri Ön İşleme
-    preprocess_data(purchase_data, customer_data)
-    
-    # Hedef Kategori Oluşturma
-    create_target_category(purchase_data)
-    
-    # Özellikleri ve Hedefi Hazırlama
-    merged_data = create_customer_features(purchase_data, customer_data, customer_cluster_segment_data)
-    features, target = select_features(merged_data)
-    
-    # Eğitim ve Test Setlerine Ayırma
-    X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
-    
-    # Model Eğitimi ve Değerlendirme
-    model = train_and_evaluate_model(X_train, X_test, y_train, y_test)
-    
-    # Modeli Kaydetme
-    joblib.dump(model, "models/category_purchase_prediction_model.pkl")
-    print("Model başarıyla kaydedildi.")
-    
-    # Örnek müşteri ID'si
-    customer_id = 523
-
-    # Müşteri için önerilen kategoriler
-    recommended_categories = recommend_categories(merged_data, customer_id)
-
-    if recommended_categories:
-        print(f"Müşteri {customer_id} için önerilen kategoriler: {recommended_categories}")
-
-        # Kategoriler için olasılıkları al
-        category_probabilities = predict_category_probabilities(model, features, merged_data, customer_id, recommended_categories)
+    def load_data(self):
+        print("\n--- Veri Yükleme ---")
+        print("Müşteri segmentasyonu için **customers**, satın alma tahmini için **purchase** ve müşteri gruplarını saklamak için **customer_cluster_segments_data** adlı verilere ihtiyacınız var.")
+        print("Veriler JSON formatında olmalıdır.")
+        print("Örnek ve hazır veriler klasöründe bulunmaktadır. (örnek: data/customers.json, data/purchase.json)")
         
-        if category_probabilities:
-            print(f"Müşteri {customer_id} için kategorilerden alınma olasılıkları:")
-            for category, probability in category_probabilities.items():
-                print(f"{category}: {probability:.2%}")
-
-            # Kategorilerden alma olasılığını toplamda hesapla
-            total_probability = calculate_total_probability(category_probabilities)
-            print(f"Tüm kategorilerden alma olasılığı (toplam): {total_probability:.2%}")
+            # Yüklenen modelleri kayıt etmek için bir klasör oluştur
+        loaded_datas_dir = "data/input_loaded_datas"
+        os.makedirs(loaded_datas_dir, exist_ok=True)
         
-# Çalıştırma
+        # Customers verisi yükle
+        print("\n** Customers Verisi **")
+        print("Customers verisi şu sütunları içermelidir: ['customer_id', 'first_name', 'last_name', 'gender', 'age', 'registered_date', 'city','country']")
+        customers_path = input("Customers veri dosyasının yolunu girin (örnek: customers.json): ")
+        try:
+            with open(customers_path, 'r', encoding='utf-8') as file:  # UTF-8 kodlamasıyla dosyayı açıyoruz
+                customers_data = json.load(file)
+                self.customers_data = pd.DataFrame(customers_data)
+                print("Customers verisi başarıyla yüklendi.")
+                print(self.customers_data.head())
+                
+                                # Veriyi kaydet
+                self.customers_data.to_json("data/input_loaded_datas/customers.json", orient='records', lines=False)
+                print("Customers verisi 'data/input_loaded_datas/customers.json' dosyasına kaydedildi.")
+        except FileNotFoundError:
+            print("Customers veri dosyası bulunamadı. Lütfen geçerli bir yol girin.")
+            self.customers_data = None
+
+        # Purchase verisi yükle
+        print("\n** Purchase Verisi **")
+        print("Purchase verisi şu sütunları içermelidir: ['customer_id', 'order_id', 'order_date', 'order_time','product_id', 'product_price', 'quantity', 'total_order_value','product_category', 'payment_method', 'basket_size']")
+        purchase_path = input("Purchase veri dosyasının yolunu girin (örnek: data/purchase.json): ")
+        try:
+            with open(purchase_path, 'r', encoding='utf-8') as file:  # UTF-8 kodlamasıyla dosyayı açıyoruz
+                purchase_data = json.load(file)
+                self.purchase_data = pd.DataFrame(purchase_data)
+                print("Purchase verisi başarıyla yüklendi.")
+                print(self.purchase_data.head())
+                
+                                                # Veriyi kaydet
+                self.purchase_data.to_json("data/input_loaded_datas/purchase.json", orient='records', lines=False)
+                print("Customers verisi 'data/input_loaded_datas/purchase.json' dosyasına kaydedildi.")
+        except FileNotFoundError:
+            print("Purchase veri dosyası bulunamadı. Lütfen geçerli bir yol girin.")
+            self.purchase_data = None
+
+        # Customer Cluster Segments Data kontrolü
+        print("\n** Customer Cluster Segments Verisi **")
+        segments_path = input("Customer Cluster Segments veri dosyasının yolunu girin (örnek: data/segments/customer_cluster_segments.json): ")
+
+        if os.path.exists(segments_path):
+            try:
+                with open(segments_path, 'r', encoding='utf-8') as file:  # UTF-8 kodlamasıyla dosyayı açıyoruz
+                    cluster_segments_data = json.load(file)
+                    self.customer_cluster_segments_data = pd.DataFrame(cluster_segments_data)
+                    print("Customer Cluster Segments verisi başarıyla yüklendi.")
+                    print(self.customer_cluster_segments_data.head())
+                    
+                    self.customer_cluster_segments_data.to_json("data/input_loaded_datas/customer_cluster_segments.json", orient='records', lines=False)
+                    print("Customers verisi 'data/input_loaded_datas/customer_cluster_segments.json' dosyasına kaydedildi.")
+            except FileNotFoundError:
+                print("Customer Cluster Segments veri dosyası okunamadı.")
+                self.customer_cluster_segments_data = None
+        else:
+            print("Customer Cluster Segments verisi bulunamadı.")
+            create_segments = input("Bu veri oluşturulsun mu? (E/H): ").lower()
+            if create_segments == "e":
+                self.create_customer_cluster_segments_data()
+
+    def create_customer_cluster_segments_data(self):
+        print("\nMüşteri Cluster Segments Verisi oluşturuluyor...")
+        if self.customers_data is not None and self.purchase_data is not None:
+            # Veriyi birleştir ve temizle
+            merged_data = preprocess_data(self.customers_data, self.purchase_data)
+
+            # Müşteri özetini oluştur
+            customer_summary = create_customer_summary(merged_data, self.customers_data)
+
+            # Özellikleri seç ve NaN değerlerini temizle
+            features = customer_summary[["age", "total_order_value", "basket_size", "purchase_frequency"]].dropna()
+
+            # Sayısal verileri doğrula
+            for col in features.columns:
+                if not np.issubdtype(features[col].dtype, np.number):
+                    print(f"{col} sütunu sayısal olmayan verilere sahip.")
+                else:
+                    features[col] = pd.to_numeric(features[col], errors="coerce")
+
+            # Özellikleri standardize et
+            scaled_features = scale_features(features)
+
+            # Kümeleri oluştur ve müşteri özetine ekle
+            kmeans = KMeans(n_clusters=3, random_state=42)
+            clusters = kmeans.fit_predict(scaled_features)
+            customer_summary["Cluster"] = clusters
+
+            # İstenilen veri formatını oluştur
+            self.customer_cluster_segments_data = customer_summary[[
+                'customer_id', 
+                'total_order_value', 
+                'basket_size', 
+                'purchase_frequency', 
+                'age', 
+                'Cluster'
+            ]]
+
+            # Veriyi kaydet
+            save_path = "data/input_loaded_datas/customer_cluster_segments_data.json"
+            self.customer_cluster_segments_data.to_json(save_path, orient='records', lines=False)
+            print(f"Müşteri Cluster Segments verisi başarıyla oluşturuldu ve {save_path} dosyasına kaydedildi.")
+            print(self.customer_cluster_segments_data.head())
+        else:
+            print("Customers verisi yüklenmeden segment verisi oluşturulamaz.")
+
+                
+        
+        
+
+    def train_model(self):
+        if self.data is None:
+            print("Lütfen önce veri yükleyin!")
+            return
+
+        print("Model eğitiliyor...")
+        # Örnek: recency, frequency, monetary sütunları kullanılarak sınıflandırma modeli
+        X = self.data[['recency', 'frequency', 'monetary']]
+        y = self.data['segment'] if 'segment' in self.data.columns else None
+
+        if y is None:
+            print("Verinizde 'segment' sütunu bulunmadığı için modeli eğitemezsiniz.")
+            return
+
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        self.model = RandomForestClassifier(random_state=42)
+        self.model.fit(X_train, y_train)
+
+        y_pred = self.model.predict(X_test)
+        accuracy = accuracy_score(y_test, y_pred)
+        print(f"Model başarıyla eğitildi. Doğruluk: {accuracy * 100:.2f}%")
+
+        # Eğitilen modeli kaydet
+        with open("model.pkl", "wb") as file:
+            pickle.dump(self.model, file)
+            print("Model 'model.pkl' dosyasına kaydedildi.")
+
+    def segment_customers(self):
+        if self.data is None:
+            print("Lütfen önce veri yükleyin!")
+            return
+
+        print("Müşteriler gruplanıyor...")
+        kmeans = KMeans(n_clusters=3, random_state=42)
+        self.data['segment'] = kmeans.fit_predict(self.data[['recency', 'frequency', 'monetary']])
+        print("Müşteri segmentasyonu başarıyla tamamlandı:")
+        print(self.data)
+
+    def predict_purchase(self):
+        if self.model is None:
+            print("Lütfen önce modeli yükleyin veya eğitin!")
+            return
+        if self.data is None:
+            print("Lütfen önce veri yükleyin!")
+            return
+
+        print("Satın alma tahminleri yapılıyor...")
+        X = self.data[['recency', 'frequency', 'monetary']]
+        self.data['purchase_probability'] = self.model.predict_proba(X)[:, 1]
+        print(self.data[['recency', 'frequency', 'monetary', 'purchase_probability']])
+
+    def recommend_category(self):
+        if self.data is None:
+            print("Lütfen önce veri yükleyin!")
+            return
+
+        print("Kategori önerisi yapılıyor...")
+        # Örnek: Recency ve Frequency değerlerine göre öneri (basit bir mantık)
+        self.data['recommended_category'] = self.data['segment'].apply(
+            lambda x: f"Kategori {x + 1}"
+        )
+        print("Öneriler tamamlandı:")
+        print(self.data[['segment', 'recommended_category']])
+
+    def analyze_category(self):
+        if self.data is None:
+            print("Lütfen önce veri yükleyin!")
+            return
+
+        print("Kategori analizi yapılıyor...")
+        # Örnek analiz: Her segmentteki müşterilerin sayısı ve satın alma olasılıklarının ortalaması
+        if 'purchase_probability' not in self.data.columns:
+            print("Satın alma tahmini yapılmadı. Lütfen önce satın alma tahmini yapın!")
+            return
+
+        analysis = self.data.groupby('segment').agg(
+            customer_count=('segment', 'count'),
+            avg_purchase_probability=('purchase_probability', 'mean')
+        )
+        print("Analiz tamamlandı:")
+        print(analysis)
+
+
+
 if __name__ == "__main__":
-    main()
+    # Uygulamayı başlat
+    app = CustomerSegmentationCLI()
+    app.main_menu()
+    
+    
+"""
+hazır veri ve model bulunmaktadır. istersen kendin yükleyip yapay zekanı oluşturabilirsin.
+-model yükle
+-veri yükle json formatında.
+-model eğit
+-müşteri grublandır/segmentasyon yap
+--satın alma tahmini yap.
+--profile uygun kategori önerisi yap
+--yapılan kategoriyi müşteriye göre analiz et. kaç ihtmalle bu kategoriden alışveriş yapar.
+"""

@@ -38,7 +38,7 @@ def create_customer_features(purchase_data, customer_data, customer_cluster_segm
     purchase_summary = purchase_data.groupby("customer_id").agg(
         total_orders=("order_id", "count"),
         avg_order_value=("total_order_value", "mean"),
-        favorite_category=("product_category", lambda x: x.mode()[0]),
+        favorite_category=("product_category", lambda x: x.mode().iloc[0] if not x.mode().empty else "Unknown"),
         last_order_date=("order_date", "max")
     ).reset_index()
 
@@ -128,9 +128,78 @@ def train_and_evaluate_model(X_train, X_test, y_train, y_test):
 
     return model
 
-# Ana Fonksiyon
+#profile göre kategori öneri yorumu
+def recommend_categories(merged_data, customer_id):
+    # favorite_category_* sütunlarını kontrol et
+    category_columns = [col for col in merged_data.columns if col.startswith("favorite_category_")]
+    if not category_columns:
+        print("favorite_category_* sütunları bulunamadı.")
+        return []
+
+    # Müşteri verisini al
+    customer_row = merged_data[merged_data["customer_id"] == customer_id]
+    if customer_row.empty:
+        print("Müşteri bulunamadı.")
+        return []
+
+    # Müşterinin bulunduğu cluster
+    customer_cluster = customer_row["cluster"].values[0]
+
+    # Cluster'daki popüler kategoriler
+    cluster_data = merged_data[merged_data["cluster"] == customer_cluster]
+    favorite_categories = cluster_data[category_columns].sum().sort_values(ascending=False).head(3).index.tolist()
+
+    # Kullanıcının geçmişte satın aldığı kategorilere göre öneriler
+    past_categories = customer_row[category_columns]
+    past_categories = past_categories.T
+    past_categories.columns = ["count"]
+    past_categories = past_categories[past_categories["count"] > 0].index.tolist()
+
+    # Önerilen kategoriler
+    recommendations = [cat.replace("favorite_category_", "") for cat in favorite_categories if cat not in past_categories]
+    
+    return recommendations
+
+def predict_category_probabilities(model, features, merged_data, customer_id, categories):
+    customer_row = merged_data[merged_data["customer_id"] == customer_id]
+    if customer_row.empty:
+        print(f"Müşteri ID {customer_id} bulunamadı.")
+        return None
+    
+    # Müşteri özelliklerini seç
+    customer_features = features[merged_data["customer_id"] == customer_id]
+    if customer_features.empty:
+        print("Müşteri özellikleri bulunamadı.")
+        return None
+
+    # Kategoriler için olasılıkları hesapla
+    category_probabilities = {}
+    probabilities = model.predict_proba(customer_features)  # Tahmin edilen olasılıkları al
+
+    # Olasılık matrisinin boyutunu kontrol et
+    print(f"Olasılık matrisinin boyutu: {probabilities.shape}")
+
+    for category in categories:
+        category_index = categories.index(category)  # Kategoriyi modelle eşleştirmek için gerekli işlem
+        if category_index < probabilities.shape[1]:  # Kategori indeksinin geçerli olduğundan emin olun
+            category_probability = probabilities[0][category_index]
+            category_probabilities[category] = category_probability
+        else:
+            print(f"Kategori {category} için indeks hatası!")
+
+    return category_probabilities
+
+
+def calculate_total_probability(category_probabilities):
+    # Kategorilerden birini satın alma olasılığı (örneğin: birden fazla kategori arasında birini alma)
+    total_probability = sum(category_probabilities.values())
+    # Burada, her kategori için olasılıkları topluyoruz. Bunu daha karmaşık bir modele göre düzenleyebilirsiniz.
+    return total_probability
+
+# Ana Fonksiyonu Güncelleme
+# Ana Fonksiyonu Güncelleme
 def main():
-    print("Model eğitimi için hazırız!")
+    print("Model eğitimi ve öneri sistemi için hazırız!")
     
     # Veri Yükleme
     customer_data, purchase_data, customer_cluster_segment_data = load_data()
@@ -154,7 +223,28 @@ def main():
     # Modeli Kaydetme
     joblib.dump(model, "models/category_purchase_prediction_model.pkl")
     print("Model başarıyla kaydedildi.")
+    
+    # Örnek müşteri ID'si
+    customer_id = 523
 
+    # Müşteri için önerilen kategoriler
+    recommended_categories = recommend_categories(merged_data, customer_id)
+
+    if recommended_categories:
+        print(f"Müşteri {customer_id} için önerilen kategoriler: {recommended_categories}")
+
+        # Kategoriler için olasılıkları al
+        category_probabilities = predict_category_probabilities(model, features, merged_data, customer_id, recommended_categories)
+        
+        if category_probabilities:
+            print(f"Müşteri {customer_id} için kategorilerden alınma olasılıkları:")
+            for category, probability in category_probabilities.items():
+                print(f"{category}: {probability:.2%}")
+
+            # Kategorilerden alma olasılığını toplamda hesapla
+            total_probability = calculate_total_probability(category_probabilities)
+            print(f"Tüm kategorilerden alma olasılığı (toplam): {total_probability:.2%}")
+        
 # Çalıştırma
 if __name__ == "__main__":
     main()
