@@ -14,10 +14,13 @@ from scripts.train_models.k_means_train_model import (
     visualize_clusters,
 )
 from scripts.train_models.random_forest_train import (
+    calculate_total_probability,
     create_customer_features,
     create_target_category,
+    predict_category_probabilities,
     preprocess_data_random_forest,
     random_forest_model_train,
+    recommend_categories,
     select_features,
     train_and_evaluate_model,
 )
@@ -33,7 +36,7 @@ class CustomerSegmentationCLI:
         )
         self.k_means_model = joblib.load("models/kmeans_model.pkl")
         self.random_forest_model = joblib.load(
-            "models/category_purchase_prediction_model.pkl"
+            "models/random_forest_model.pkl"
         )
 
     def main_menu(self):
@@ -45,9 +48,8 @@ class CustomerSegmentationCLI:
             print("3. Model Eğit")
             print("4. Müşteri Gruplandır (Segmentasyon)")
             print("5. Satın Alma Tahmini Yap")
-            print("6. Kategori Önerisi Yap")
-            print("7. Kategori Analizi Yap")
-            print("8. Çıkış")
+            print("6. Kategori Önerisi ve Analizi Yap")
+            print("7. Çıkış")
             choice = input("Seçiminizi yapın: ")
 
             if choice == "1":
@@ -63,8 +65,6 @@ class CustomerSegmentationCLI:
             elif choice == "6":
                 self.recommend_category()
             elif choice == "7":
-                self.analyze_category()
-            elif choice == "8":
                 print("Çıkılıyor...")
                 break
             else:
@@ -116,7 +116,6 @@ class CustomerSegmentationCLI:
                 "Random Forest model dosyası bulunamadı. Lütfen geçerli bir yol girin."
             )
             self.random_forest_model = None
-
     def load_data(self):
         print("\n--- Veri Yükleme ---")
         print(
@@ -225,7 +224,6 @@ class CustomerSegmentationCLI:
             create_segments = input("Bu veri oluşturulsun mu? (E/H): ").lower()
             if create_segments == "e":
                 self.create_customer_cluster_segments_data()
-
     def create_customer_cluster_segments_data(self):
         print("\nMüşteri Cluster Segments Verisi oluşturuluyor...")
         if self.customers_data is not None and self.purchase_data is not None:
@@ -288,7 +286,7 @@ class CustomerSegmentationCLI:
 
         # KMeans modelini eğitmek için verileri ölçeklendir ve temizle
         print("k_means_model eğitiliyor...")
-        scaled_features, customer_summary = self.get_scaled_features()
+        scaled_features, customer_summary, merged_data = self.get_scaled_features()
 
         # KMeans modelini eğit
         kmeans, clusters = train_kmeans(scaled_features)
@@ -308,7 +306,6 @@ class CustomerSegmentationCLI:
             self.purchase_data, self.customers_data, customer_summary
         )
         print("Random Forest modeli başarıyla eğitildi.")
-
     def get_scaled_features(self):
         if self.customers_data is None or self.purchase_data is None:
             raise ValueError("Veriler eksik. Lütfen müşteri ve satın alma verilerini yükleyin.")
@@ -323,8 +320,7 @@ class CustomerSegmentationCLI:
         ].dropna()
         scaled_features = scale_features(features)
 
-        return scaled_features, customer_summary
-
+        return scaled_features, customer_summary, merged_data
     def segment_customers(self):
         if self.k_means_model is None:
             print("KMeans modeli bulunamadı. Lütfen önce modeli eğitin.")
@@ -335,7 +331,7 @@ class CustomerSegmentationCLI:
             return
 
         # Müşteri segmentasyonu için gerekli verileri birleştir ve temizle
-        scaled_features, customer_summary = self.get_scaled_features()
+        scaled_features, customer_summary,merged_data = self.get_scaled_features()
 
         # Kümeleri tahmin et ve müşteri özetine ekle
         clusters = self.k_means_model.predict(scaled_features)
@@ -362,48 +358,52 @@ class CustomerSegmentationCLI:
 
 
     def predict_purchase(self):
-        if self.model is None:
-            print("Lütfen önce modeli yükleyin veya eğitin!")
-            return
-        if self.data is None:
-            print("Lütfen önce veri yükleyin!")
-            return
-
         print("Satın alma tahminleri yapılıyor...")
-        X = self.data[["recency", "frequency", "monetary"]]
-        self.data["purchase_probability"] = self.model.predict_proba(X)[:, 1]
-        print(self.data[["recency", "frequency", "monetary", "purchase_probability"]])
+        preprocess_data_random_forest(self.purchase_data, self.customers_data)
+        # Hedef Kategori Oluşturma
+        create_target_category(self.purchase_data)
+        # Özellikleri ve Hedefi Hazırlama
+        merged_data = create_customer_features(self.purchase_data, self.customers_data, self.customer_cluster_segments_data)
+        features, target = select_features(merged_data)
+        # Eğitim ve Test Setlerine Ayırma
+        X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
+    
+        # Model Eğitimi ve Değerlendirme
+        model = train_and_evaluate_model(X_train, X_test, y_train, y_test)
 
     def recommend_category(self):
-        if self.data is None:
-            print("Lütfen önce veri yükleyin!")
-            return
+        print("Model eğitimi ve öneri sistemi için hazırız!")
+        
+        preprocess_data_random_forest(self.purchase_data, self.customers_data)
+        
+        # Hedef Kategori Oluşturma
+        create_target_category(self.purchase_data)
+        
+        # Özellikleri ve Hedefi Hazırlama
+        merged_data = create_customer_features(self.purchase_data, self.customers_data, self.customer_cluster_segments_data)
+        features, target = select_features(merged_data)
+        
+        # Örnek müşteri ID'si
+        print("Müşteri numarası girin: 1 - {0}".format(len(self.customers_data)))
+        customer_id = int(input())
 
-        print("Kategori önerisi yapılıyor...")
-        # Örnek: Recency ve Frequency değerlerine göre öneri (basit bir mantık)
-        self.data["recommended_category"] = self.data["segment"].apply(
-            lambda x: f"Kategori {x + 1}"
-        )
-        print("Öneriler tamamlandı:")
-        print(self.data[["segment", "recommended_category"]])
+        # Müşteri için önerilen kategoriler
+        recommended_categories = recommend_categories(merged_data, customer_id)
 
-    def analyze_category(self):
-        if self.data is None:
-            print("Lütfen önce veri yükleyin!")
-            return
+        if recommended_categories:
+            print(f"Müşteri {customer_id} için önerilen kategoriler: {recommended_categories}")
 
-        print("Kategori analizi yapılıyor...")
-        # Örnek analiz: Her segmentteki müşterilerin sayısı ve satın alma olasılıklarının ortalaması
-        if "purchase_probability" not in self.data.columns:
-            print("Satın alma tahmini yapılmadı. Lütfen önce satın alma tahmini yapın!")
-            return
+            # Kategoriler için olasılıkları al
+            category_probabilities = predict_category_probabilities(self.random_forest_model, features, merged_data, customer_id, recommended_categories)
+            
+            if category_probabilities:
+                print(f"Müşteri {customer_id} için kategorilerden alınma olasılıkları:")
+                for category, probability in category_probabilities.items():
+                    print(f"{category}: {probability:.2%}")
 
-        analysis = self.data.groupby("segment").agg(
-            customer_count=("segment", "count"),
-            avg_purchase_probability=("purchase_probability", "mean"),
-        )
-        print("Analiz tamamlandı:")
-        print(analysis)
+                # Kategorilerden alma olasılığını toplamda hesapla
+                total_probability = calculate_total_probability(category_probabilities)
+                print(f"Tüm kategorilerden alma olasılığı (toplam): {total_probability:.2%}")
 
 
 if __name__ == "__main__":

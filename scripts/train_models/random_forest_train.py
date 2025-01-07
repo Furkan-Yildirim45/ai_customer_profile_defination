@@ -77,7 +77,7 @@ def create_customer_features(purchase_data, customer_data, customer_cluster_segm
     merged_data["total_orders"] = merged_data["total_orders"].fillna(0)
     merged_data["avg_order_value"] = merged_data["avg_order_value"].fillna(0)
     merged_data["registered_days"] = (pd.Timestamp.now() - merged_data["registered_date"]).dt.days
-    merged_data["Cluster"] = customer_cluster_segment_data["Cluster"]
+    merged_data["Cluster"] = customer_cluster_segment_data["Cluster"]  # Make sure it's consistently named
     merged_data["target_purchased"] = merged_data["target_purchased"].fillna(0)
     merged_data["order_frequency"] = merged_data["total_orders"] / merged_data["registered_days"]
     merged_data["order_frequency"] = merged_data["order_frequency"].fillna(0)
@@ -101,6 +101,8 @@ def select_features(merged_data):
     target = merged_data["target_purchased"]
     return features, target
 
+from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix, classification_report
+
 # Modeli Eğitme ve Değerlendirme
 def train_and_evaluate_model(X_train, X_test, y_train, y_test):
     # SMOTE Uygulama
@@ -118,14 +120,39 @@ def train_and_evaluate_model(X_train, X_test, y_train, y_test):
     y_pred = model.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)   
     roc_auc = roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])
-    print(f"Doğruluk (Accuracy): {accuracy:.2f}")
-    print(f"ROC-AUC: {roc_auc:.2f}")
-
+    
+    # Doğruluk (Accuracy) Yazdırma
+    print(f"Modelin doğruluk oranı: {accuracy:.2f}")
+    
+    # ROC-AUC Yazdırma
+    print(f"Modelin ROC-AUC skoru: {roc_auc:.2f}")
+    
+    # Karışıklık Matrisi Yazdırma
     conf_matrix = confusion_matrix(y_test, y_pred)
-    print("Confusion Matrix:")
+    print("Karışıklık Matrisi (Confusion Matrix):")
     print(conf_matrix)
 
+    # Karışıklık Matrisinin Bileşenlerini Açıklama
+    tn, fp, fn, tp = conf_matrix.ravel()
+    
+    # Yüzde Hesaplama
+    total = tn + fp + fn + tp
+    tn_percent = (tn / total) * 100
+    fp_percent = (fp / total) * 100
+    fn_percent = (fn / total) * 100
+    tp_percent = (tp / total) * 100
+    
+    print(f"Doğru Negatifler (True Negatives - TN): {tn} ({tn_percent:.2f}%)")
+    print(f"Yanlış Pozitifler (False Positives - FP): {fp} ({fp_percent:.2f}%)")
+    print(f"Yanlış Negatifler (False Negatives - FN): {fn} ({fn_percent:.2f}%)")
+    print(f"Doğru Pozitifler (True Positives - TP): {tp} ({tp_percent:.2f}%)")
+
+    # Precision, Recall ve F1-Skoru
+    print("\nSınıflandırma Raporu (Classification Report):")
+    print(classification_report(y_test, y_pred))
+
     return model
+
 
 #profile göre kategori öneri yorumu
 def recommend_categories(merged_data, customer_id):
@@ -178,16 +205,19 @@ def predict_category_probabilities(model, features, merged_data, customer_id, ca
     # Olasılık matrisinin boyutunu kontrol et
     print(f"Olasılık matrisinin boyutu: {probabilities.shape}")
 
+    # Her kategori için olasılıkları hesapla
     for category in categories:
-        category_index = categories.index(category)  # Kategoriyi modelle eşleştirmek için gerekli işlem
-        if category_index < probabilities.shape[1]:  # Kategori indeksinin geçerli olduğundan emin olun
-            category_probability = probabilities[0][category_index]
-            category_probabilities[category] = category_probability
+        if category in categories:  # Kategorinin liste içinde olup olmadığını kontrol et
+            category_index = categories.index(category)
+            if category_index < probabilities.shape[1]:  # Kategori indeksinin geçerli olduğundan emin olun
+                category_probability = probabilities[0][category_index]
+                category_probabilities[category] = category_probability
+            else:
+                print(f"Kategori {category} için indeks hatası!")
         else:
-            print(f"Kategori {category} için indeks hatası!")
+            print(f"Kategori {category} kategoriler listesinde bulunamadı!")
 
     return category_probabilities
-
 
 def calculate_total_probability(category_probabilities):
     # Kategorilerden birini satın alma olasılığı (örneğin: birden fazla kategori arasında birini alma)
