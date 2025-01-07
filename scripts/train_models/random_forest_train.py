@@ -5,7 +5,6 @@ import joblib
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-
 # Veri Yükleme Fonksiyonu
 def load_data():
     customer_data = pd.read_json("data/customers.json")
@@ -14,7 +13,7 @@ def load_data():
     return customer_data, purchase_data, customer_cluster_segment_data
 
 # Veri Ön İşleme Fonksiyonu
-def preprocess_data(purchase_data, customer_data):
+def preprocess_data_random_forest(purchase_data, customer_data):
     # Satın alma verilerini temizleme
     purchase_data["total_order_value"] = purchase_data["total_order_value"].replace({"\$": "", ",": ""}, regex=True)
     purchase_data["product_price"] = purchase_data["product_price"].replace({"\$": "", ",": ""}, regex=True)
@@ -78,7 +77,7 @@ def create_customer_features(purchase_data, customer_data, customer_cluster_segm
     merged_data["total_orders"] = merged_data["total_orders"].fillna(0)
     merged_data["avg_order_value"] = merged_data["avg_order_value"].fillna(0)
     merged_data["registered_days"] = (pd.Timestamp.now() - merged_data["registered_date"]).dt.days
-    merged_data["cluster"] = customer_cluster_segment_data["cluster"]
+    merged_data["Cluster"] = customer_cluster_segment_data["Cluster"]
     merged_data["target_purchased"] = merged_data["target_purchased"].fillna(0)
     merged_data["order_frequency"] = merged_data["total_orders"] / merged_data["registered_days"]
     merged_data["order_frequency"] = merged_data["order_frequency"].fillna(0)
@@ -93,7 +92,7 @@ def select_features(merged_data):
         "total_orders", 
         "avg_order_value", 
         "registered_days", 
-        "cluster",
+        "Cluster",
         "order_frequency", 
         "spending_variance",  
         "category_spending_ratio",  
@@ -143,10 +142,10 @@ def recommend_categories(merged_data, customer_id):
         return []
 
     # Müşterinin bulunduğu cluster
-    customer_cluster = customer_row["cluster"].values[0]
+    customer_cluster = customer_row["Cluster"].values[0]
 
     # Cluster'daki popüler kategoriler
-    cluster_data = merged_data[merged_data["cluster"] == customer_cluster]
+    cluster_data = merged_data[merged_data["Cluster"] == customer_cluster]
     favorite_categories = cluster_data[category_columns].sum().sort_values(ascending=False).head(3).index.tolist()
 
     # Kullanıcının geçmişte satın aldığı kategorilere göre öneriler
@@ -197,15 +196,14 @@ def calculate_total_probability(category_probabilities):
     return total_probability
 
 # Ana Fonksiyonu Güncelleme
-# Ana Fonksiyonu Güncelleme
-def main():
+def mainRandomForest():
     print("Model eğitimi ve öneri sistemi için hazırız!")
     
     # Veri Yükleme
     customer_data, purchase_data, customer_cluster_segment_data = load_data()
     
     # Veri Ön İşleme
-    preprocess_data(purchase_data, customer_data)
+    preprocess_data_random_forest(purchase_data, customer_data)
     
     # Hedef Kategori Oluşturma
     create_target_category(purchase_data)
@@ -244,7 +242,28 @@ def main():
             # Kategorilerden alma olasılığını toplamda hesapla
             total_probability = calculate_total_probability(category_probabilities)
             print(f"Tüm kategorilerden alma olasılığı (toplam): {total_probability:.2%}")
-        
-# Çalıştırma
-if __name__ == "__main__":
-    main()
+
+def random_forest_model_train(purchase_data,customers_data,customer_cluster_segments_data):
+    # RandomForest modelini eğit
+    # Veri Ön İşleme
+    preprocess_data_random_forest(purchase_data, customers_data)
+            
+    # Hedef Kategori Oluşturma
+    create_target_category(purchase_data)
+            
+    # Özellikleri ve Hedefi Hazırlama
+    merged_data = create_customer_features(purchase_data, customers_data, customer_cluster_segments_data)
+    features, target = select_features(merged_data)
+            
+    # Eğitim ve Test Setlerine Ayırma
+    X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
+            
+    # Model Eğitimi ve Değerlendirme
+    model = train_and_evaluate_model(X_train, X_test, y_train, y_test)
+            
+    # Modeli Kaydetme
+    joblib.dump(model, "models/custom_trained_models/random_forest_model.pkl")
+    print("Model başarıyla kaydedildi.")
+# # Çalıştırma
+# if __name__ == "__main__":
+#     mainRandomForest()

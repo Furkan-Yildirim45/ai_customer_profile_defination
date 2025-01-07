@@ -4,12 +4,10 @@ import numpy as np
 import pandas as pd
 import json
 from sklearn.cluster import KMeans
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-import pickle
 
-from scripts.train_models.k_means_train_model import create_customer_summary, load_data, preprocess_data, scale_features
+from scripts.train_models.k_means_train_model import create_customer_summary, preprocess_data, scale_features, train_kmeans, visualize_clusters
+from scripts.train_models.random_forest_train import create_customer_features, create_target_category, preprocess_data_random_forest, random_forest_model_train, select_features, train_and_evaluate_model
 
 
 class CustomerSegmentationCLI:
@@ -19,6 +17,8 @@ class CustomerSegmentationCLI:
         self.customer_cluster_segments_data = None
         self.k_means_model = None
         self.random_forest_model = None
+        
+
 
     def main_menu(self):
         while True:
@@ -213,36 +213,38 @@ class CustomerSegmentationCLI:
         else:
             print("Customers verisi yüklenmeden segment verisi oluşturulamaz.")
 
-                
-        
-        
+
+    
+
 
     def train_model(self):
-        if self.data is None:
-            print("Lütfen önce veri yükleyin!")
+        # Verilerin dolu olup olmadığını kontrol et
+        if self.customers_data is None or self.purchase_data is None or self.customer_cluster_segments_data is None:
+            print("Veriler eksik! Lütfen önce veriyi yükleyin!")
             return
 
-        print("Model eğitiliyor...")
-        # Örnek: recency, frequency, monetary sütunları kullanılarak sınıflandırma modeli
-        X = self.data[['recency', 'frequency', 'monetary']]
-        y = self.data['segment'] if 'segment' in self.data.columns else None
+        print("Modeller eğitiliyor...")
 
-        if y is None:
-            print("Verinizde 'segment' sütunu bulunmadığı için modeli eğitemezsiniz.")
-            return
+        # KMeans modelini eğitmek için k_means_train.py dosyasındaki kodları çağır
+        # Veriyi birleştir ve temizle
+        print("k_means_model eğitiliyor...")
+        merged_data = preprocess_data(self.customers_data, self.purchase_data)
+        customer_summary = create_customer_summary(merged_data, self.customers_data)
+        features = customer_summary[["age", "total_order_value", "basket_size", "purchase_frequency"]].dropna()
+        scaled_features = scale_features(features)
+        
+        kmeans, clusters = train_kmeans(scaled_features)
+        customer_summary["Cluster"] = clusters
 
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        self.model = RandomForestClassifier(random_state=42)
-        self.model.fit(X_train, y_train)
+        # KMeans kümelerini görselleştir
+        visualize_clusters(customer_summary)
 
-        y_pred = self.model.predict(X_test)
-        accuracy = accuracy_score(y_test, y_pred)
-        print(f"Model başarıyla eğitildi. Doğruluk: {accuracy * 100:.2f}%")
-
-        # Eğitilen modeli kaydet
-        with open("model.pkl", "wb") as file:
-            pickle.dump(self.model, file)
-            print("Model 'model.pkl' dosyasına kaydedildi.")
+        # KMeans modelini kaydet
+        joblib.dump(kmeans, "models/custom_trained_models/kmeans_model.pkl")
+        print("KMeans modeli başarıyla eğitildi ve kaydedildi.")
+        
+        print("random_forest_model eğitiliyor...")
+        random_forest_model_train(self.purchase_data,self.customers_data,self.customer_cluster_segments_data)
 
     def segment_customers(self):
         if self.data is None:
@@ -306,6 +308,7 @@ if __name__ == "__main__":
     app = CustomerSegmentationCLI()
     app.main_menu()
     
+
     
 """
 hazır veri ve model bulunmaktadır. istersen kendin yükleyip yapay zekanı oluşturabilirsin.
